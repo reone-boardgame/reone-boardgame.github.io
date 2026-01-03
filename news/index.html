@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-one | ニュース一覧</title>
+    <link rel="icon" href="../favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>    
+<body class="bg-sub" data-base-path="../">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="py-24 md:py-32 min-h-screen">
+            <div class="container mx-auto px-6 max-w-4xl">
+                
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl md:text-4xl font-bold text-on-sub">ニュース一覧</h1>
+                    <p class="text-on-sub-muted mt-2">News List</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+
+                <div id="news-container"></div>
+
+                <div class="mt-12 text-center">
+                    <a href="../index.html" class="inline-block border border-on-sub-muted text-on-sub-muted hover:opacity-75 px-6 py-3 rounded-full transition-all duration-300">
+                        トップページへ戻る
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../scripts.js"></script>
+
+    <script>
+        /**
+         * ==========================================
+         * ニュース追加設定エリア
+         * ==========================================
+         * 新しいニュースを追加するときは、このリストの一番上に
+         * 以下の形式でデータを追加してください。
+         * * { 
+         * date: "日付", 
+         * title: "タイトル", 
+         * url: "リンク先のURL（なければ null）",
+         * newTab: true または false（別タブで開くかどうか）
+         * },
+         */
+        const newsList = [
+            {
+                date: "2026.01.31（予告）",
+                title: "BGBE2026に出展します【F-14】",
+                url: "./news_20260131.html",
+                newTab: false
+            },
+            {
+                date: "2025.12.31",
+                title: "webサイトが新しくなりました！",
+                url: null,
+                newTab: false
+            },
+            {
+                date: "2025.11.22",
+                title: "ゲームマーケット2025秋に出展しました【土-R11】",
+                url: "./news_20251122.html",
+                newTab: false
+            },
+            {
+                date: "2025.11.01",
+                title: "ボドゲのちゃちゃちゃに参加しました",
+                url: "./news_20251101.html",
+                newTab: false
+            },
+            {
+                date: "2025.10.31",
+                title: "花金ゲムマ2025秋試遊会に参加しました",
+                url: "./news_20251031.html",
+                newTab: false
+            },
+            {
+                date: "2025.08.30",
+                title: "マーダーミステリー『雫の妖精と闇のオークション』をリリースしました",
+                url: "./news_20250830.html",
+                newTab: false
+            },
+            {
+                date: "2025.07.10",
+                title: "ブラウザゲーム『都道府県 No.1』をリリースしました",
+                url: "./news_20250710.html",
+                newTab: false
+            },
+            {
+                date: "2025.05.17",
+                title: "ゲームマーケット2025春に出展しました【土-M01】",
+                url: "./news_20250517.html",
+                newTab: false
+            }
+        ];
+
+        /**
+         * ==========================================
+         * 以下、表示用プログラム（編集不要）
+         * ==========================================
+         */
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.getElementById('news-container');
+
+            newsList.forEach(item => {
+                const hasLink = item.url !== null && item.url !== "";
+                const tag = hasLink ? 'a' : 'div';
+                const hrefAttr = hasLink ? `href="${item.url}"` : '';
+                const targetAttr = (hasLink && item.newTab) ? 'target="_blank" rel="noopener noreferrer"' : '';
+                const arrowIcon = hasLink ? `<span class="transform group-hover:translate-x-1 transition-transform duration-300" style="color: var(--card-text-on-sub);">→</span>` : '';
+                const hoverClass = hasLink ? 'cursor-pointer' : '';
+
+                const html = `
+                    <${tag} ${hrefAttr} ${targetAttr} 
+                        class="block border-b pb-4 pt-2 px-2 -mx-2 transition-colors duration-300 ${hoverClass} group first:rounded-t-lg last:rounded-b-lg last:border-b-0"
+                        style="background-color: var(--card-bg-on-sub); border-bottom-color: var(--card-text-on-sub);">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-sm block mb-1" style="color: var(--card-text-on-sub);">${item.date}</span>
+                                <p class="text-lg font-medium transition-colors duration-300" style="color: var(--card-heading-on-sub);">
+                                    ${item.title}
+                                </p>
+                            </div>
+                            ${arrowIcon}
+                        </div>
+                    </${tag}>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+        });
+    </script>
+</body>
+</html>

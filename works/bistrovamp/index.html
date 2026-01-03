@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビストロ・ヴァンパイア | Re-one</title>
+    <link rel="icon" href="../../favicon.ico">
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="bg-main-darker"  data-base-path="../../">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- ===== タイトル & サムネイル ===== -->
+        <section class="bg-sub">
+            <div class="container mx-auto px-6 py-16 md:py-24">
+                <div class="lg:flex lg:items-center lg:gap-16">
+                    <!-- テキストエリア -->
+                    <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+                        <p class="text-on-sub-muted font-bold mb-2">料理×人狼ゲーム</p>
+                        <h1 class="text-4xl md:text-5xl font-bold text-on-sub mb-4 leading-tight">ビストロ・ヴァンパイア</h1>
+                        <p class="text-on-sub-muted text-lg mt-4 max-w-xl mx-auto lg:mx-0">料理を通じて仲間に抱くのは信頼？それとも疑い？？</p>
+                    </div>
+                    <!-- 商品サムネイル -->
+                    <div class="lg:w-1/2">
+                        <img src="thumbnail.jpg" alt="ゲームのサムネイル画像" class="w-full h-auto rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== こんなゲーム ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">こんなゲーム</h2>
+                    <p class="text-on-main-muted mt-2">Recommended for</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ゲーム概要</h2>
+                    <p class="leading-relaxed text-xl">
+                        ある夜、大繁盛なビストロで働くシェフたちの元にハンターがやってきた。
+                    </p>
+                    <p class="leading-relaxed text-xl">
+                        「ヴァンパイアの臭いがする。お前達の誰かに違いない！」
+                    </p>
+                    <p class="leading-relaxed text-xl">
+                        走る動揺に止まらないオーダー。シェフたちは料理を作り続けながら、お互いを疑い合う。まさか、あの人の正体って――？
+                    </p>
+                    <p class="leading-relaxed text-xl">
+                        <span class="text-red-500 font-bold">料理を作りながら、ヴァンパイアを疑え！</span>
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                        <!-- 左上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">料理作り</h3>
+                                <p>協力して料理を作ろう</p>
+                            </div>
+                        </div>
+                        <!-- 右上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-chess-knight"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">人狼ゲーム</h3>
+                                <p>突如始まる人狼ゲーム！</p>
+                            </div>
+                        </div>
+                        <!-- 左下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-lightbulb"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">違和感を出し合おう</h3>
+                                <p>他のプレイヤーに怪しいところが……？</p>
+                            </div>
+                        </div>
+                        <!-- 右下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-comments"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">推理</h3>
+                                <p>会話して自分の勝ちに誘導しよう！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">遊び方紹介</h2>
+                    <p class="text-on-sub-muted mt-2">How to play</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+                <div class="hidden md:block w-full md:h-[500px] bg-white border border-gray-200 rounded-lg overflow-hidden shadow-inner mb-6">
+                    <iframe src="manual.pdf" class="w-full h-full" title="説明書PDF">
+                        <div class="flex items-center justify-center h-full text-gray-500">
+                            <p>お使いのブラウザはPDFの埋め込み表示に対応していません。</p>
+                        </div>
+                    </iframe>
+                </div>
+
+                <div class="text-center">
+                    <a href="manual.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-main text-on-main font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity shadow-lg">
+                        <i class="fas fa-file-pdf mr-2"></i> PDFを別タブで開く
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">紹介動画</h2>
+                    <p class="text-on-main-muted mt-2">Gameplay Video</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+
+                <!-- 3つにしたい場合は md:grid-cols-3 にする -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/Fi6teO9P7PY?si=Uvb1edLkW31lQcj7"
+                            title="YouTube video player 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+
+                    <div class="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/KlCdmzkuh8Y?si=LLvGoGzgzR4eKvqn"
+                            title="YouTube video player 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+
+                    <div class="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/Fm5QJlsUT0c?si=77plVf_1ygeBQiT3"
+                            title="YouTube video player 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">購入する</h2>
+                    <p class="text-on-sub-muted mt-2">Shop</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <a href="https://amzn.to/3W73C5X" target="_blank" rel="noopener noreferrer" class="flex-1 card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                            <div class="text-4xl text-yellow-500 mb-4"><i class="fab fa-amazon"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">Amazon</h3>
+                            <p class="mb-6 opacity-80">Amazonで購入する</p>
+                            <span class="inline-block bg-orange-400 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">商品ページへ</span>
+                        </a>
+
+                        <a href="https://bodoge.hoobby.net/market/items/7738" target="_blank" rel="noopener noreferrer" class="flex-1 card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                            <div class="text-4xl text-green-600 mb-4"><i class="fas fa-cube"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">ボドゲーマ</h3>
+                            <p class="mb-6 opacity-80">ボドゲーマで購入する</p>
+                            <span class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">商品ページへ</span>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <a href="https://gamemarket.jp/" target="_blank" rel="noopener noreferrer" class="w-full card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                            <div class="text-4xl text-yellow-600 mb-4"><i class="fas fa-dice"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">ゲームマーケット</h3>
+                            <p class="mb-6 opacity-80">イベントでの取り置き予約など</p>
+                            <span class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">詳細を見る</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 基本情報 ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-8 text-center">基本情報</h2>
+
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ人数</dt>
+                            <dd class="w-3/4">4〜6人</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ時間</dt>
+                            <dd class="w-3/4">20分~</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">対象年齢</dt>
+                            <dd class="w-3/4">10歳以上</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ジャンル</dt>
+                            <dd class="w-3/4">正体隠匿ゲーム</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-8 text-center">入っているもの</h2>
+                    
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">説明書</dt>
+                            <dd class="w-3/4">1枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">役カード</dt>
+                            <dd class="w-3/4">全3種類 6枚<br>ヴァンパイア（人狼）：1枚 / スーシェフ（狂人）： 1枚 / シェフ（市民）：4枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">メニューカード</dt>
+                            <dd class="w-3/4">全10種類 10枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">材料カード</dt>
+                            <dd class="w-3/4">全4種類 42枚<br>にんにく：6枚 / 米：2枚 / パン：2枚 / 麺：2枚 / 肉：8枚 / 魚：7枚 / 野菜：15枚</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ルール</h2>
+                    <div class="space-y-4 leading-relaxed">
+
+                        <div class="font-bold">★ゲームの準備</div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">1.</div>
+                            <div class="w-full">役カードをプレイヤーの人数分用意します。この時、料理長と副料理長のカードを必ず含めてください。そして、役カードを裏向きでよく混ぜ、各プレイヤーが1枚ずつ選びます。そこに書かれている内容が、今回のゲームでのあなたの役割になります。ゲーム終了まで、自分の役カードを他のプレイヤーに見せてはいけません。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">2.</div>
+                            <div class="w-full">材料カードのうち「にんにく」を各プレイヤーに1枚ずつ配ります。「にんにく」以外の材料カードを裏向きでよく混ぜ、各プレイヤーに6枚ずつ配ります。余った材料カードは使用しないため、箱にしまいます。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8"></div>
+                            <div class="w-full">※<b>「にんにくカード」はどの食材にも代用できる”何でも”カード</b>です。ただし、<b>ヴァンパイアはにんにくが苦手なので使用できません</b>。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">3.</div>
+                            <div class="w-full">メニューカードを裏向きでシャッフルして5枚選び、1~5の順番を決めて並べます。その後すべて表に向けます。ゲーム中はこの5品の料理を1から順番に作っていきます。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8"></div>
+                            <div class="w-full">※全員シェフなのでお仕事として料理作成は成功させなければなりません。<span class="text-red-500 font-bold">最低3品、料理を成功させなければ全員敗北です。</span></div>
+                        </div>
+
+                        <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
+
+                        <div class="font-bold">★ゲームの進行</div>
+                        <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
+
+                        <div class="font-bold">★コース料理作成の流れ</div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">1.</div>
+                            <div class="w-full">じゃんけんなどで材料を出す順番を決めます。最初に材料を出すプレイヤーは、1品ごとに1人ずつずらしてください。<br>例）1品目：A→B→C→Dの順<br>　　2品目：B→C→D→Aの順<br>　　3品目：C→D→A→Bの順</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">2.</div>
+                            <div class="w-full">準備時に決めた順番で料理を1品ずつ作成していきます。<br>メニューカードに記載されている任意の材料枠を埋めるように、各プレイヤーは材料名を宣言しながら材料カードを1枚ずつ裏向きで場に出します。埋める枠はプレイヤー人数によって異なります<br>例、4人→1~4の枠、6人→1~6の枠</div>
+                        </div>
+                        <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8"></div>
+                            <div class="w-full">※<b>手札によってはメニューカードの記載通りに材料を出せない場合があります</b>。しかし、料理を完成させることが前提なので嘘でもカードを出さなければいけません。その時は「材料枠通りの正しい材料」を宣言しながら、「にんにく（ヴァンパイアは使用不可）」か「他の材料カード」を出してください。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8"></div>
+                            <div class="w-full">例）A.「肉」と宣言しながら「にんにく」を出す<br>　　B.「肉」と宣言しながら「野菜」を出す</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">3.</div>
+                            <div class="w-full">1品分の料理が完成したら場に出した材料カードを裏向きのまま、誰が出したか分からないようにシャッフルします。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">4.</div>
+                            <div class="w-full">シャッフル後、材料カードを表向きにし結果を確認します。メニューカードに指定された材料カードがすべて揃っていれば料理成功です。ただし、にんにくカードはどの材料としても扱うことができます。 にんにくカードを除き、1枚でもメニューカードに指定された材料カードと異なる場合は料理失敗となります。</div>
+                        </div>
+                        <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">5.</div>
+                            <div class="w-full">確認した材料カードと該当する料理カードはゲームの進行を妨げない位置にまとめておき、後の議論時に確認できるようにします。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">6.</div>
+                            <div class="w-full">ここまでの流れが終わると、次の料理に取り掛かります。同様の行動を5品すべてで繰り返します。もし途中で3品料理を失敗するとその時点でゲーム終了となります。</div>
+                        </div>
+
+                        <div class="font-bold">★ゲームの終了と勝利条件</div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">1.</div>
+                            <div class="w-full">料理を5品完成させた後、これまでの材料の出し方や料理の成功・失敗を振り返り、誰がヴァンパイアか議論します。（制限時間：3分）</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">2.</div>
+                            <div class="w-full">議論後に多数決を実施し、投票数の多い者がヴァンパイアとして吊るされます。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">3.</div>
+                            <div class="w-full">吊るされたプレイヤーは役カードを開示します。</div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8">4.</div>
+                            <div class="w-full">ヴァンパイアとして吊ったプレイヤーがヴァンパイア役だった場合は一般シェフたちの勝ちです。吊ったプレイヤーがヴァンパイア役ではなく、スーシェフまたは一般シェフだった場合はヴァンパイアとスーシェフの勝ちです。</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-sub">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
+                    <div class="space-y-8">
+
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">最後の投票時、ヴァンパイアと疑われた最多票のプレイヤーが複数人いた場合は？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div class="row-start-2">再投票かジャンケンなどの方法でで1人に絞ってください。</div>
+                        </div>
+
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">手番の人もカードの獲得に参加できる？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div class="row-start-2">相談や会話は自由です。ただし、1分程度に収め、長くならないようにしてください。</div>
+                        </div>
+
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">コース料理を3品以上失敗した場合は？（ゲーム途中で3品失敗したら？）</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div class="row-start-2">その時点でゲームは終了し、プレイヤーは全員敗北です。最初からゲームをやり直してください。</div>
+                        </div>
+
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">材料カードに書いてある豆知識をゲーム中に使うことはありますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div class="row-start-2">ありません。ちょっとした雑学としてお楽しみください。</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-sub">
+                    <h2 class="text-3xl font-bold mb-8 text-center">クレジット</h2>
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ゲームデザイン</dt>
+                            <dd class="w-3/4">春日利津<br>なごる</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">グラフィックデザイン</dt>
+                            <dd class="w-3/4">ゆに</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">リリース日</dt>
+                            <dd class="w-3/4">2025/05/17 (ver1.0)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="../../index.html" class="inline-block border border-on-sub-muted text-on-sub-muted hover:opacity-75 px-6 py-3 rounded-full transition-all duration-300">
+                    トップページへ戻る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../../scripts.js"></script>
+
+</body>
+</html>
+

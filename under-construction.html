@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-one | 準備中</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body class="bg-main" data-base-path="">
+
+    <!-- ヘッダー（scripts.jsによって読み込まれます） -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="relative bg-main overflow-hidden min-h-[60vh] flex items-center">
+            
+            <!-- 背景の装飾（トップページと同じスタイル） -->
+            <div class="absolute top-0 left-0 w-full h-2/3 bg-sub opacity-20 transform -skew-y-6"></div>
+            
+            <div class="container mx-auto px-6 py-24 text-center relative z-10">
+                <div class="mb-8">
+                    <i class="fa-solid fa-person-digging text-6xl md:text-8xl text-on-main-muted opacity-80"></i>
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight text-on-main">
+                    UNDER CONSTRUCTION
+                </h1>
+                
+                <p class="text-lg md:text-xl text-on-main-muted max-w-2xl mx-auto mb-10">
+                    このページは現在準備中です。<br>
+                    公開まで今しばらくお待ちください。
+                </p>
+
+                <a href="index.html" class="inline-block border-2 border-on-main text-on-main px-8 py-3 rounded-full hover:bg-on-main hover:text-main transition-all duration-300 font-bold">
+                    トップページへ戻る
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター（scripts.jsによって読み込まれます） -->
+    <div id="footer-placeholder"></div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
