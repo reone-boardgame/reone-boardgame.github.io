@@ -140,6 +140,35 @@
             border-color: transparent transparent transparent #ffffff;
         }
 
+        /* ===== おみくじボタン（左上） ===== */
+        .omikuji-start-container {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            z-index: 40;
+            display: flex;
+            align-items: center;
+        }
+
+        #omikuji-start-button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #omikuji-start-button img {
+            width: 60px;
+            height: auto;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        #omikuji-start-button:hover img {
+            transform: scale(1.1);
+        }
+
         /* ===== スマートフォン用のスタイル ===== */
         @media (max-width: 767px) {
             .hero-heading {
@@ -189,6 +218,14 @@
                 height: 150px;
                 padding: 0 15px;
             }
+
+            .omikuji-start-container {
+                top: 70px;
+                left: 10px;
+            }
+            #omikuji-start-button img {
+                width: 45px;
+            }
         }
     </style>
 </head>    
@@ -199,6 +236,13 @@
             <img src="palette-roulette/image1.png" alt="ゲーム開始">
         </button>
         <span class="tooltip-bubble">パレットルーレットに挑戦する！</span>
+    </div>
+
+    <div class="omikuji-start-container">
+        <button id="omikuji-start-button">
+            <img src="omikuji/image1.png" alt="おみくじ">
+        </button>
+        <span class="tooltip-bubble">おみくじを引く！</span>
     </div>
 
     <div id="game-modal" style="display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6);">

@@ -332,4 +332,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // 関数を実行
     setupBackToTopButton();
 
+    // おみくじボタンのクリックイベント
+    const omikujiStartButton = document.getElementById('omikuji-start-button');
+    omikujiStartButton.addEventListener('click', function() {
+        // 帯のアニメーション位置をリセット
+        topBandOffset = 0;
+        bottomBandOffset = 0;
+        topBandFrame.style.backgroundPositionX = '0px';
+        bottomBandFrame.style.backgroundPositionX = '0px';                
+        
+        // おみくじのページをiframeに読み込む
+        gameFrame.src = 'omikuji/index.html';
+        gameModal.style.display = 'block';
+    });
+
 });

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* 背景色 */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff4500; /* ボタン色 */
+    color: white;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #e03e00;
+    transform: scale(1.05);
+}
+
+/* 結果の文字スタイル */
+#omikujiResult {
+    font-size: 5em;
+    font-weight: bold;
+    color: #d32f2f; /* 赤色 */
+    margin: 40px 0;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* スマホ向け調整 */
+@media (max-width: 768px) {
+    h1 { font-size: 2em; }
+    #omikujiResult { font-size: 4em; }
+}
