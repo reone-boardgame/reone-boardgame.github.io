@@ -143,6 +143,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 const mainColor = getComputedStyle(root).getPropertyValue('--main-color').trim();
                 const subColor = getComputedStyle(root).getPropertyValue('--sub-color').trim();
                 updateLogos(mainColor, subColor);
+
+                // バージョン情報を取得して表示
+                fetch(basePath + 'version.json')
+                    .then(res => res.json())
+                    .then(vData => {
+                        const versionEl = document.getElementById('site-version');
+                        if (versionEl && vData.version) {
+                            versionEl.textContent = `v${vData.version}`;
+                        }
+                    })
+                    .catch(err => console.log('Version info not found'));
             });
     }
 
