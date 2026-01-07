@@ -1,3 +1,17 @@
+/* Google Analytics (GA4) 設定 */
+(function() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X85EKK3RK7';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X85EKK3RK7');
+})();
+
 document.addEventListener("DOMContentLoaded", function() {
 
     // サイトのデフォルト配色を定義
