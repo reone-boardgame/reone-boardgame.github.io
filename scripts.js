@@ -1,3 +1,17 @@
+/* Google Analytics (GA4) 設定 */
+(function() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X85EKK3RK7';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X85EKK3RK7');
+})();
+
 document.addEventListener("DOMContentLoaded", function() {
 
     // サイトのデフォルト配色を定義
@@ -143,6 +157,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 const mainColor = getComputedStyle(root).getPropertyValue('--main-color').trim();
                 const subColor = getComputedStyle(root).getPropertyValue('--sub-color').trim();
                 updateLogos(mainColor, subColor);
+
+                // バージョン情報を取得して表示
+                fetch(basePath + 'version.json')
+                    .then(res => res.json())
+                    .then(vData => {
+                        const versionEl = document.getElementById('site-version');
+                        if (versionEl && vData.version) {
+                            versionEl.textContent = `v${vData.version}`;
+                        }
+                    })
+                    .catch(err => console.log('Version info not found'));
             });
     }
 
