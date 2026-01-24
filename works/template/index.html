@@ -10,7 +10,7 @@
     <!-- Google Fonts (Inter) の読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../style.css">
@@ -278,35 +278,24 @@
                     <div class="space-y-4 leading-relaxed">
 
                         <div class="font-bold">★ゲームの準備</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">遊び方を書く<br>改行する場合</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">箇条書きを付け足す場合</div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>遊び方を書く<br>改行する場合</li>
+                            <li>箇条書きを付け足す場合</li>
+                        </ol>
                         <div class="font-bold">★ゲームの進行</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">次の節</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">段落を下げる場合
-                                <div class="mt-4 space-y-2">
-                                    <div class="flex">
-                                        <div class="flex-shrink-0 w-8">1.</div>
-                                        <div class="w-full">こうやって</div>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="flex-shrink-0 w-8">2.</div>
-                                        <div class="w-full">かきます</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>次の節</li>
+                            <li>段落を下げる場合
+                                <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                    <li class="w-full">こうやって</li>
+                                    <li>かきます</li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <ul class="list-disc pl-6 mt-2 space-y-1">
+                            <li>番号なしの</li>
+                            <li>箇条書き</li>
+                        </ul>
                         <img src="how_to_play1.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
 
                     </div>

@@ -10,7 +10,7 @@
     <!-- Google Fonts (Inter) の読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../style.css">
@@ -269,85 +269,46 @@
                     <div class="space-y-4 leading-relaxed">
 
                         <div class="font-bold">★ゲームの準備</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">アクションカードをシャッフルし、各プレイヤーに裏向きで4枚ずつ配ります。余ったアクションカードは箱へ戻してください。</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">各プレイヤーにカード一覧表を1枚ずつ配ります。<br>（遊ぶ際の補助用なので、無くても遊べます。）</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">3.</div>
-                            <div class="w-full">ハプニングカードをシャッフルし、裏向きで重ねた山札を中央に置きます。これをハプニングカードの山札とします。</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">4.</div>
-                            <div class="w-full">じゃんけんなどで「長子（長男または長女）」を決め、長子から右回りの順番で進めます。最後のプレイヤーが末っ子です。</div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>アクションカードをシャッフルし、各プレイヤーに裏向きで4枚ずつ配ります。余ったアクションカードは箱へ戻してください。</li>
+                            <li>各プレイヤーにカード一覧表を1枚ずつ配ります。<br>（遊ぶ際の補助用なので、無くても遊べます。）</li>
+                            <li>ハプニングカードをシャッフルし、裏向きで重ねた山札を中央に置きます。これをハプニングカードの山札とします。</li>
+                            <li>じゃんけんなどで「長子（長男または長女）」を決め、長子から右回りの順番で進めます。最後のプレイヤーが末っ子です。</li>
+                        </ol>
                         <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
                         <div class="font-bold">★ゲームの進行</div>
                         <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
                         <div class="font-bold">★1ターン目</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">長子のプレイヤーがハプニングカードの山札の一番上をめくり、表向きにして山札の一番上に重ねます。このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>に発動します。</div>
-                        </div>
-                        <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">長子から順番に手札を1枚交換していきます。
-
-                                <div class="mt-4 space-y-2">
-                                    <div class="flex">
-                                        <div class="flex-shrink-0 w-8">1.</div>
-                                        <div class="w-full">他プレイヤーを1人指名し、手札から渡したいカードを1枚選んで渡します。</div>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="flex-shrink-0 w-8">2.</div>
-                                        <div class="w-full">カードを受け取ったプレイヤーの手札から、ランダムに1枚選び、自分の手札に加えます。</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>長子のプレイヤーがハプニングカードの山札の一番上をめくり、表向きにして山札の一番上に重ねます。このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>に発動します。</li>
+                            <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
+                            <li>長子から順番に手札を1枚交換していきます。
+                                <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                    <li>他プレイヤーを1人指名し、手札から渡したいカードを1枚選んで渡します。</li>
+                                    <li>カードを受け取ったプレイヤーの手札から、ランダムに1枚選び、自分の手札に加えます。</li>
+                                </ol>
+                            </li>
+                        </ol>
                         <div class="font-bold">★2ターン目以降</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">長子のプレイヤーは、山札の一番上で表向きになっているハプニングカードを横向きにして山札の隣に置きます。このカードの効果が<span class="text-red-500 font-bold">今ターン</span>中に適用されます。<br>※効果は<span class="text-red-500 font-bold">今ターン</span>でのみ発動され、以降のターンへは引き継がれません。</div>
-                        </div>
-                        <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">【ハプニングカードの更新】1ターン目と同様にハプニングカードの山札の一番上のカードを表向きにして、山札の上に重ねます。<br>※このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>で発動します。 </div>
-                        </div>
-                        <img src="how_to_play5.png" alt="遊び方5" class="w-full h-auto rounded-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">3.</div>
-                            <div class="w-full">手札の交換は1ターン目と同様です。ただし、横にしたハプニングカードの効果が適用されることに注意してください。<br>例）ハプニングカード「ポチ逃亡」が効果発動中→アクションカード「ポチのご加護」が使用できない。</div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>長子のプレイヤーは、山札の一番上で表向きになっているハプニングカードを横向きにして山札の隣に置きます。このカードの効果が<span class="text-red-500 font-bold">今ターン</span>中に適用されます。<br>※効果は<span class="text-red-500 font-bold">今ターン</span>でのみ発動され、以降のターンへは引き継がれません。</li>
+                            <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
+                            <li>【ハプニングカードの更新】1ターン目と同様にハプニングカードの山札の一番上のカードを表向きにして、山札の上に重ねます。<br>※このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>で発動します。 </li>
+                            <img src="how_to_play5.png" alt="遊び方5" class="w-full h-auto rounded-lg">
+                            <li>手札の交換は1ターン目と同様です。ただし、横にしたハプニングカードの効果が適用されることに注意してください。<br>例）ハプニングカード「ポチ逃亡」が効果発動中→アクションカード「ポチのご加護」が使用できない。</li>
+                        </ol>
                         <div class="font-bold">★ゲームの終了</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">ハプニングカードの中から「親（父または母）」カードが出ると<span class="text-red-500 font-bold">次のターン</span>でゲームは終了します。<strong>この時に適用されているハプニングカードの効果が、ゲーム終了時の温度計算に適用されます</strong>。</div>
-                        </div>
-                        <img src="how_to_play6.png" alt="遊び方6" class="w-full h-auto rounded-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">ハプニングカード「親」が適用されたターンでは、今まで通り手札の交換を一巡します。プレイヤー全員の交換が終わればゲームは終了です。この時点での温度で勝敗を決めます。 </div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>ハプニングカードの中から「親（父または母）」カードが出ると<span class="text-red-500 font-bold">次のターン</span>でゲームは終了します。<strong>この時に適用されているハプニングカードの効果が、ゲーム終了時の温度計算に適用されます</strong>。</li>
+                            <img src="how_to_play6.png" alt="遊び方6" class="w-full h-auto rounded-lg">
+                            <li>ハプニングカード「親」が適用されたターンでは、今まで通り手札の交換を一巡します。プレイヤー全員の交換が終わればゲームは終了です。この時点での温度で勝敗を決めます。 </li>
+                        </ol>
                         <div class="font-bold">★手札の計算と勝利条件</div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">1.</div>
-                            <div class="w-full">基本となる平熱36.0度に、手札のアクションカードの合計温度を足し合わせます。</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">2.</div>
-                            <div class="w-full">「38.1度以上で失格」に加え、「親」の前に適用されていたハプニングカードの内容に従って体温を更新します。</div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 w-8">3.</div>
-                            <div class="w-full">病院行き判定までの範囲で最も体温が高いプレイヤーが勝者です。<br>※適用されるハプニングカードによっては最も低いプレイヤーが勝つ場合もあります。</div>
-                        </div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>基本となる平熱36.0度に、手札のアクションカードの合計温度を足し合わせます。</li>
+                            <li>「38.1度以上で失格」に加え、「親」の前に適用されていたハプニングカードの内容に従って体温を更新します。</li>
+                            <li>病院行き判定までの範囲で最も体温が高いプレイヤーが勝者です。<br>※適用されるハプニングカードによっては最も低いプレイヤーが勝つ場合もあります。</li>
+                        </ol>
 
                     </div>
                 </div>
