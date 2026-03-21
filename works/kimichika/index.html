@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キミの近くに座りたい。 | Re-one</title>
+    <link rel="icon" href="../../favicon.ico">
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="bg-main-darker"  data-base-path="../../">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- ===== タイトル & サムネイル ===== -->
+        <section class="bg-sub">
+            <div class="container mx-auto px-6 py-16 md:py-24">
+                <div class="lg:flex lg:items-center lg:gap-16">
+                    <!-- テキストエリア -->
+                    <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+                        <p class="text-on-sub-muted font-bold mb-2">推理×ブラフ×陣取り</p>
+                        <h1 class="text-4xl md:text-5xl font-bold text-on-sub mb-4 leading-tight">キミの近くに座りたい。</h1>
+                        <p class="text-on-sub-muted text-lg mt-4 max-w-xl mx-auto lg:mx-0">お前、あの子のこと好きだろ笑</p>
+                    </div>
+                    <!-- 商品サムネイル -->
+                    <div class="lg:w-1/2">
+                        <img src="thumbnail_tmp.jpg" alt="サムネイル画像" class="w-full h-auto rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== こんなゲーム ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">こんなゲーム</h2>
+                    <p class="text-on-main-muted mt-2">Recommended for</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ゲーム概要</h2>
+                    <p class="leading-relaxed text-xl">
+                        誰だって憧れのあの子の隣に座りたい！<br>
+                        でも、みんなにバレたら噂されちゃう？？<br>
+                        心臓バクバク、顔はクールに。席替え中の教室は恋のカオス<br>
+                        自分の好きな人は隠しつつ、ライバルの恋心を探り合う<br>
+                        <span class="text-red-500 font-bold">机上の青春陣取り合戦</span>、ここに開幕！
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+
+                        <!-- 左上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">甘酸っぱい青春テーマ</h3>
+                                <p>5×5マスの教室は恋のカオス！？</p>
+                            </div>
+                        </div>
+                        <!-- 右上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">思考を読む推理戦</h3>
+                                <p>相手の恋心を見破れ！</p>
+                            </div>
+                        </div>
+                        <!-- 左下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-chess-knight"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">白熱のブラフ合戦</h3>
+                                <p>誰にも気付かれずに有利な教室を作ろう</p>
+                            </div>
+                        </div>
+                        <!-- 右下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-gem"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">チップ奪い合いの攻防</h3>
+                                <p>クラスでの好感度を賭けるヒリヒリ感</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">遊び方紹介</h2>
+                    <p class="text-on-sub-muted mt-2">How to play</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+                <div class="w-full h-[50vh] md:h-[750px] bg-white border border-gray-200 rounded-lg overflow-hidden shadow-inner mb-6">
+                    <iframe src="manual.pdf" class="w-full h-full" title="説明書PDF">
+                        <div class="flex items-center justify-center h-full text-gray-500">
+                            <p>お使いのブラウザはPDFの埋め込み表示に対応していません。</p>
+                        </div>
+                    </iframe>
+                </div>
+                <div class="text-center">
+                    <a href="manual.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-main text-on-main font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity shadow-lg">
+                        <i class="fas fa-file-pdf mr-2"></i> PDFを別タブで開く
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">紹介動画</h2>
+                    <p class="text-on-main-muted mt-2">Gameplay Video</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="aspect-video rounded-lg shadow-inner bg-gray-200 flex flex-col items-center justify-center text-gray-500">
+                            <i class="fas fa-video text-4xl mb-3"></i>
+                            <span class="font-bold text-lg">準備中</span>
+                            <span class="text-sm">Coming Soon</span>
+                        </div>
+
+                        <div class="aspect-video rounded-lg shadow-inner bg-gray-200 flex flex-col items-center justify-center text-gray-500">
+                            <i class="fas fa-video text-4xl mb-3"></i>
+                            <span class="font-bold text-lg">準備中</span>
+                            <span class="text-sm">Coming Soon</span>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_1"
+                            title="YouTube video player 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+
+                    <div class="aspect-video rounded-lg shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/VIDEO_ID_2"
+                            title="YouTube video player 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+ -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">購入する</h2>
+                    <p class="text-on-sub-muted mt-2">Shop</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- <a href="https://www.amazon.co.jp/" target="_blank" rel="noopener noreferrer" class="flex-1 card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group"> -->
+                            <!-- <div class="text-4xl text-yellow-500 mb-4"><i class="fab fa-amazon"></i></div> -->
+                        <div class="flex-1 card-on-sub p-8 text-center opacity-60 cursor-not-allowed">
+                            <div class="text-4xl text-gray-400 mb-4"><i class="fab fa-amazon"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">Amazon</h3>
+                            <!-- <p class="mb-6 opacity-80">Amazonで購入する</p> -->
+                            <!-- <span class="inline-block bg-orange-400 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">商品ページへ</span> -->
+                            <p class="mb-6 opacity-80">準備中</p>
+                            <span class="inline-block bg-gray-400 text-white font-bold py-3 px-8 rounded-full">Coming Soon</span>
+                        </div>
+                        <!-- </a> -->
+
+                        <!-- <a href="https://bodoge.hoobby.net/" target="_blank" rel="noopener noreferrer" class="flex-1 card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group"> -->
+                            <!-- <div class="text-4xl text-green-600 mb-4"><i class="fas fa-cube"></i></div> -->
+                        <div class="flex-1 card-on-sub p-8 text-center opacity-60 cursor-not-allowed">
+                            <div class="text-4xl text-gray-400 mb-4"><i class="fas fa-cube"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">ボドゲーマ</h3>
+                            <!-- <p class="mb-6 opacity-80">ボドゲーマで購入する</p> -->
+                            <!-- <span class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">商品ページへ</span> -->
+                            <p class="mb-6 opacity-80">準備中</p>
+                            <span class="inline-block bg-gray-400 text-white font-bold py-3 px-8 rounded-full">Coming Soon</span>
+                        </div>
+                        <!-- </a> -->
+                    </div>
+
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <a href="https://gamemarket.jp/booth/5850" target="_blank" rel="noopener noreferrer" class="w-full card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                            <div class="text-4xl text-yellow-600 mb-4"><i class="fas fa-dice"></i></div>
+                            <h3 class="text-2xl font-bold mb-2">ゲームマーケット</h3>
+                            <p class="mb-6 opacity-80">イベントでの取り置き予約など</p>
+                            <span class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full group-hover:opacity-80 transition-opacity">詳細を見る</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 基本情報 ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-8 text-center">基本情報</h2>
+
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ人数</dt>
+                            <dd class="w-3/4">3〜6人</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ時間</dt>
+                            <dd class="w-3/4">40分〜</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">対象年齢</dt>
+                            <dd class="w-3/4">10歳以上</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ジャンル</dt>
+                            <dd class="w-3/4">陣取り・ブラフ・推理</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-8 text-center">入っているもの</h2>
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">説明書</dt>
+                            <dd class="w-3/4">1枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">座席カード</dt>
+                            <dd class="w-3/4">全8種類 24枚<br>サッカー部 / テニス部 / 陸上部 / 剣道部 / バスケ部 / 吹奏楽部 / 美術部 / 写真部 × 各3枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">自席カード</dt>
+                            <dd class="w-3/4">6プレイヤー分、各2枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">好きな人カード</dt>
+                            <dd class="w-3/4">全8種類 8枚<br>（上記8種類の部活 × 各1枚）</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">好感度チップ</dt>
+                            <dd class="w-3/4">全2種類 50枚<br>1pt × 40枚、5pt × 10枚</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">中央マーカー</dt>
+                            <dd class="w-3/4">1枚</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ルール</h2>
+                    <div class="space-y-4 leading-relaxed">
+
+                        <div class="font-bold">★ゲームの目的と勝利条件</div>
+                        <div>このゲームの目的は、全3学年（本ゲームではラウンドのことを学年と呼びます）を通して、最も多くの<strong>好感度チップ</strong>（以下、チップ）を集めることです。チップは主に以下の方法で獲得できます。</div>
+                        <ul class="list-disc pl-6 mt-2 space-y-1">
+                            <li>席次ボーナス：学年終了時、自分の席と”好きな人”の席が近くにあると獲得できます。</li>
+                            <li>推理ボーナス：他プレイヤーの”好きな人”を的中させると、その相手からチップを奪うことができます。ただし、予想を外すと相手にチップを奪われます。</li>
+                        </ul>
+                        <div>全3学年が終了した時点で、最も多くのチップを所持しているプレイヤーが勝者となります。</div>
+
+                        <div class="font-bold">★ゲームの進行</div>
+                        <div>このゲームは3学年にわたって行います。</div>
+
+                        <div>◇学年毎のゲーム準備</div>
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>場の準備<br>座席カードのうちランダムな1枚を場に表向きで置き、その上に中央マーカーを置きます（※<strong>5人プレイの場合のみ、座席カードは置かず、中央マーカーだけを置きます</strong>）。<br>このマーカーの位置を中心とした5×5のマス目が、教室（ゲームのフィールド）となります。</li>
+                            <img src="how_to_play1.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                            <li>座席カードの配布<br>中央に座席カードを1枚置いた後（5人プレイの場合は置きません）、残りの座席カードからプレイ人数に応じて以下の枚数をランダムに選び、全員に公開して除外します。除外したカードは本学年では使用しません。
+                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                <li>3人プレイ：2枚除外（1人あたり7枚配ります）</li>
+                                <li>4人プレイ：3枚除外（1人あたり5枚配ります）</li>
+                                <li>5人プレイ：4枚除外（1人あたり4枚配ります）</li>
+                                <li>6人プレイ：5枚除外（1人あたり3枚配ります）</li>
+                            </ol>
+                            <strong>※除外したカードの中に同じ部活のカードが3枚含まれていた場合</strong>は、除外したカードを山札に戻してシャッフルし、選び直してください。<br>残ったカードをよくシャッフルし、各プレイヤーに配りきってください。</li>
+                            <li>自席カードの配布<br>各プレイヤーに”自席カード”を2枚ずつ配ります。</li>
+                            <li>好きな人カードの配布<br>”好きな人カード”をシャッフルし、各プレイヤーに1枚ずつ裏向きで配ります。このカードは他のプレイヤーに見せてはいけません。これが<strong>この学年であなたが狙う好きな人が所属する部活</strong>です。</li>
+                            <li>好感度チップの配布<br>1学年目だけ各プレイヤーに好感度チップを<strong>2枚ずつ</strong>配ります。2学年目と3学年目の開始時は、全プレイヤーに好感度チップを<strong>1枚ずつ</strong>配ります。</li>
+                        </ol>
+                        <img src="how_to_play2.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+
+                        <div>◇手番のながれ</div>
+                        <ol class="list-disc pl-8 space-y-4 leading-relaxed">
+                            <li>手番の順序<br><strong>1学年目</strong>：じゃんけんで最初のプレイヤーを決め、時計回りに進行します。<br><strong>2学年目以降</strong>：前学年の終了時に最も好感度チップを持っていたプレイヤーから、時計回りに進行します（同点の場合は、じゃんけんで決定します）。</li>
+                            <li>手番のアクション<br>手番では、以下の順序でアクションを行います。</li>
+                            <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                <li>カードの配置（必須）<br>手元の自席カード（2枚のうち1枚）と手札の座席カードの中から1枚を選び、場の空いているマスに表向きで置きます。<br>自席カードをマスに置いた場合、そのマスはあなたの席として確定します。</li>
+                                <li>推理と宣言（任意）<br>他プレイヤー1名の好きな人（部活）を推理し、宣言することができます。<br>＜手順＞
+                                    <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                        <li>宣言とベット<br>指名するプレイヤーと予想する部活を宣言し、自分のチップを所持している範囲内で好きな枚数ベットします。<br>（例：Aさんの好きな人はサッカー部だ！と宣言し、チップを2枚出す）</li>
+                                        <li>判定
+                                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                                <li>正解の場合：<br>ベットした数と同数のチップを相手から受け取ります（相手のチップが不足している場合は、相手の手持ちすべてを受け取ります）。当てられた相手はその学年で脱落となり、場にある自席カードを裏返します。<br>※<strong>脱落したプレイヤーも手番は続けます</strong>が、学年終了時の席次ボーナスは獲得できません。</li>
+                                                <li>不正解の場合：<br>ベットしたチップをすべて相手に渡します。</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    チップを1枚も持っていない場合を除き、このアクションは、<strong>1学年につき最低1回は必ず行う必要があります</strong>。<br>※手元に残ったもう1枚の自席カードは、この「推理の義務」を果たしたかを表す判定するためのマーカーとして使用します。推理を実行したプレイヤーは、手元の自席カードを裏返して義務完了の目印としてください。
+                                    <img src="how_to_play3.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                                </li>
+                            </ol>
+                        </ol>
+
+                        <div>◇学年の終了と得点計算</div>
+                        <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                            <li>終了条件<br>全員がカードを全て出しきったら、その学年は終了です。</li>
+                            <li>得点計算（席次ボーナス）<br>全員一斉に”好きな人カード”を公開します。<br>”自分の席”の周囲に、自分の”好きな人”がいるかを確認し、その位置関係に応じて好感度チップのやり取りを行います。</li>
+                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                <li>前後左右に隣接している場合：<br><strong>学年に応じてチップを獲得</strong>します。<br>1学年目：2枚 / 2学年目：3枚 / 3学年目：5枚</li>
+                                <li>斜めに隣接している場合：<br>学年に関わらずチップを1枚獲得します。</li>
+                                <li>隣接できていない場合：<br>ペナルティとしてチップを1枚支払います（所持枚数が0枚の場合は支払不要）。</li>
+                            </ol>
+                            <img src="how_to_play4.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                            ※その学年中に推理で「好きな人」を当てられて脱落となっているプレイヤーは、<strong>席次ボーナスの獲得はなく、ペナルティの支払いも発生しません</strong>。<br>上記が終了したら、現在の学年に応じて進行します。
+                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                <li>1、2学年目が終了した場合：<br>場に出された”自席カード”・”座席カード”・”中央マーカー”をすべて回収します。自席カードは持ち主の手元に戻し、裏返っている場合は表向きに戻して、次の学年の準備に進みます。</li>
+                                <li>3学年目が終了した場合：<br>ゲームは終了し、最も多くのチップを所持しているプレイヤーが勝者となります。</li>
+                            </ol>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-sub">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
+                    <div class="space-y-8">
+
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">チップがマイナスになることはありますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>いいえ、0枚未満になることはありません。支払いやペナルティの際にチップが不足している場合、手持ちの分だけを支払います（所持0枚なら支払いは発生しません）。次の学年にマイナス分が持ち越されることもありません。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">推理アクションの際、あえて「自分の好きな人の部活」を宣言しても良いですか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、構いません。他プレイヤーを惑わすためのブラフとして有効です。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">もし他プレイヤーにチップを奪われるなどして、自分のチップが0枚になってしまった場合、義務である推理のアクションはどうなるでしょうか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>チップを1枚も所持していない場合、推理アクションを行うことはできず、義務も免除されます。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">場に登場する部活の枚数に偏りがあっても良いですか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、場に登場するカードが「1〜3枚」の範囲であれば、枚数に偏りがあっても構いません。ただし、特定の部活が「0枚（3枚すべてが除外）」になってしまう場合は、準備の「座席カードの配布」のルールに従って選び直してください。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">自分の席の周囲に「好きな人」のカードが複数ある場合、席次ボーナスは重複してもらえるのでしょうか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>いいえ、もらえません。最も獲得枚数が多いボーナスのみが適用されます（好きな人は1人だけだからです）。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">ゲーム終了時、チップ所持数が最多のプレイヤーが複数いる場合はどうなりますか？ </div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>該当するプレイヤー全員が勝者となります。 </div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">推理は1学年に何度でも行えますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、所持しているチップがある限り、手番が来るたびに行えます。ただし、1回の手番で行える推理アクションは1回のみです。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">脱落になった（場の自席カードが裏返った）プレイヤーも、カードを置いたり推理したりできますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、すべて通常通り行います。カードの配置はもちろん、推理アクションの義務も残ります。ただし、学年終了時の席次ボーナスは獲得できません。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">ゲーム開始時に置いた中央マーカーの下にあるカードも、ボーナスの対象になりますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、なります。他のカードと同様に部活を確認し、隣接していればボーナスを獲得できます。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">現在配置されているカードから離れた場所にカードを置いても良いですか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、5×5の範囲内であれば、他のカードと隣接していなくても自由に置くことができます。</div>
+                        </div>
+                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                            <div class="font-bold text-lg">Q.</div>
+                            <div class="font-bold">5人プレイの時、中央マーカーが置かれているマスにカードを置くことはできますか？</div>
+                            <div class="font-bold text-lg row-start-2">A.</div>
+                            <div>はい、置くことができます。5人プレイでは中央マーカーの下にカードがない状態で始まりますが、そこも「空いているマス」として扱います。カードを置く際は、マーカーをそのカードの上に載せ直してください。</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-sub">
+                    <h2 class="text-3xl font-bold mb-8 text-center">クレジット</h2>
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ゲームデザイン</dt>
+                            <dd class="w-3/4">春日利津<br>なごる<br>きのぴー<br>soraKING</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">グラフィックデザイン</dt>
+                            <dd class="w-3/4">ゆに</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">リリース日</dt>
+                            <dd class="w-3/4">2026/05/23 (ver1.0)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="../../index.html" class="inline-block border border-on-sub-muted text-on-sub-muted hover:opacity-75 px-6 py-3 rounded-full transition-all duration-300">
+                    トップページへ戻る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../../scripts.js"></script>
+
+</body>
+</html>
+
