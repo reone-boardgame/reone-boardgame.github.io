@@ -18,7 +18,7 @@
         /* ===== スライダー ===== */
         @keyframes scroll {
           0% {transform: translateX(0);}
-          100% {transform: translateX(calc(-320px * 5));}
+          100% {transform: translateX(-50%);}
         }
 
         .slider {
@@ -33,9 +33,9 @@
         }
 
         .slide-track {
-          width: calc(320px * 10); 
+          width: max-content;
           display: flex;
-          animation: scroll 30s linear infinite;
+          animation: scroll 40s linear infinite;
         }
 
         .slider:hover .slide-track {
@@ -176,14 +176,6 @@
                  height: 85%;
             }
 
-            @keyframes scroll {
-                0% {transform: translateX(0);}
-                100% {transform: translateX(calc(-240px * 5));}
-            }
-            .slide-track {
-                width: calc(240px * 10);
-                animation-name: scroll;
-            }
             .slide {
                 width: 240px;
                 height: 150px;
@@ -319,6 +311,11 @@
                                 <a href="works/lumiere/"><img src="works/lumiere/thumbnail.png" alt="雫の妖精と闇のオークション"></a>
                             </div>
                         </div>
+                        <div class="slide">
+                            <div class="slide-image-wrapper">
+                                <a href="works/astral/"><img src="works/astral/thumbnail.png" alt="Astral Harvest"></a>
+                            </div>
+                        </div>
 
                         <div class="slide">
                             <div class="slide-image-wrapper">
@@ -353,6 +350,11 @@
                         <div class="slide">
                             <div class="slide-image-wrapper">
                                 <a href="works/lumiere/"><img src="works/lumiere/thumbnail.png" alt="雫の妖精と闇のオークション"></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image-wrapper">
+                                <a href="works/astral/"><img src="works/astral/thumbnail.png" alt="Astral Harvest"></a>
                             </div>
                         </div>
                     </div>
