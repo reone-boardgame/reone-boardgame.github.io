@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購入する | Re-one</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-main-darker" data-base-path="">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- ===== ヒーロー ===== -->
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-on-sub">購入する</h1>
+                <p class="text-on-sub-muted mt-2">Shop</p>
+                <div class="w-24 h-1 bg-main mx-auto mt-4 mb-6"></div>
+                <p class="text-on-sub-muted max-w-2xl mx-auto">Re-oneのゲームはAmazon・ボドゲーマ・ゲームマーケットなどでご購入いただけます。</p>
+            </div>
+        </section>
+
+        <!-- ===== 販売中の作品 ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">販売中の作品</h2>
+                    <p class="text-on-main-muted mt-2">Physical Games</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+
+                <div class="space-y-8">
+
+                    <!-- ===== キミの近くに座りたい。 ===== -->
+                    <div class="card-ui card-on-main">
+                        <div class="md:flex md:gap-8 md:items-start">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
+                                <a href="works/kimichika/">
+                                    <img src="works/kimichika/thumbnail_tmp.jpg" alt="キミの近くに座りたい。" class="w-full h-auto rounded-lg shadow-lg">
+                                </a>
+                            </div>
+                            <div class="md:w-3/4">
+                                <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-main);">推理×ブラフ×陣取り</p>
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <a href="works/kimichika/" class="hover:opacity-75 transition-opacity" style="color: var(--card-heading-on-main);">キミの近くに座りたい。</a>
+                                </h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                    <div class="p-4 rounded-lg text-center opacity-50 cursor-not-allowed bg-gray-100">
+                                        <div class="text-2xl text-gray-400 mb-2"><i class="fab fa-amazon"></i></div>
+                                        <p class="font-bold text-sm mb-1 text-gray-500">Amazon</p>
+                                        <span class="text-xs text-gray-400">準備中</span>
+                                    </div>
+                                    <div class="p-4 rounded-lg text-center opacity-50 cursor-not-allowed bg-gray-100">
+                                        <div class="text-2xl text-gray-400 mb-2"><i class="fas fa-cube"></i></div>
+                                        <p class="font-bold text-sm mb-1 text-gray-500">ボドゲーマ</p>
+                                        <span class="text-xs text-gray-400">準備中</span>
+                                    </div>
+                                    <a href="https://www.gamemarket.jp/game/187839" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-gray-800 text-white">
+                                        <div class="text-2xl text-yellow-400 mb-2"><i class="fas fa-dice"></i></div>
+                                        <p class="font-bold text-sm mb-1">ゲームマーケット</p>
+                                        <span class="text-xs opacity-75">詳細を見る</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== どのハコにいれたっけ？ ===== -->
+                    <div class="card-ui card-on-main">
+                        <div class="md:flex md:gap-8 md:items-start">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
+                                <a href="works/donohako/">
+                                    <img src="works/donohako/thumbnail.jpg" alt="どのハコにいれたっけ？" class="w-full h-auto rounded-lg shadow-lg">
+                                </a>
+                            </div>
+                            <div class="md:w-3/4">
+                                <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-main);">荷ほどきスピードバトル</p>
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <a href="works/donohako/" class="hover:opacity-75 transition-opacity" style="color: var(--card-heading-on-main);">どのハコにいれたっけ？</a>
+                                </h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                    <a href="https://www.amazon.co.jp/dp/B0G2SXK9YB" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-orange-400 text-white">
+                                        <div class="text-2xl mb-2"><i class="fab fa-amazon"></i></div>
+                                        <p class="font-bold text-sm mb-1">Amazon</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://bodoge.hoobby.net/market/items/7739" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-green-600 text-white">
+                                        <div class="text-2xl mb-2"><i class="fas fa-cube"></i></div>
+                                        <p class="font-bold text-sm mb-1">ボドゲーマ</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://www.gamemarket.jp/game/186134" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-gray-800 text-white">
+                                        <div class="text-2xl text-yellow-400 mb-2"><i class="fas fa-dice"></i></div>
+                                        <p class="font-bold text-sm mb-1">ゲームマーケット</p>
+                                        <span class="text-xs opacity-75">詳細を見る</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== 明日、休みだったらいいのに ===== -->
+                    <div class="card-ui card-on-main">
+                        <div class="md:flex md:gap-8 md:items-start">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
+                                <a href="works/ashiyasu/">
+                                    <img src="works/ashiyasu/thumbnail.jpg" alt="明日、休みだったらいいのに" class="w-full h-auto rounded-lg shadow-lg">
+                                </a>
+                            </div>
+                            <div class="md:w-3/4">
+                                <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-main);">ズル休み × チキンレース</p>
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <a href="works/ashiyasu/" class="hover:opacity-75 transition-opacity" style="color: var(--card-heading-on-main);">明日、休みだったらいいのに</a>
+                                </h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                    <a href="https://amzn.to/494ELqY" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-orange-400 text-white">
+                                        <div class="text-2xl mb-2"><i class="fab fa-amazon"></i></div>
+                                        <p class="font-bold text-sm mb-1">Amazon</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://bodoge.hoobby.net/market/items/7737" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-green-600 text-white">
+                                        <div class="text-2xl mb-2"><i class="fas fa-cube"></i></div>
+                                        <p class="font-bold text-sm mb-1">ボドゲーマ</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://www.gamemarket.jp/game/185191" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-gray-800 text-white">
+                                        <div class="text-2xl text-yellow-400 mb-2"><i class="fas fa-dice"></i></div>
+                                        <p class="font-bold text-sm mb-1">ゲームマーケット</p>
+                                        <span class="text-xs opacity-75">詳細を見る</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== ビストロ・ヴァンパイア ===== -->
+                    <div class="card-ui card-on-main">
+                        <div class="md:flex md:gap-8 md:items-start">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
+                                <a href="works/bistrovamp/">
+                                    <img src="works/bistrovamp/thumbnail.jpg" alt="ビストロ・ヴァンパイア" class="w-full h-auto rounded-lg shadow-lg">
+                                </a>
+                            </div>
+                            <div class="md:w-3/4">
+                                <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-main);">料理×人狼ゲーム</p>
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <a href="works/bistrovamp/" class="hover:opacity-75 transition-opacity" style="color: var(--card-heading-on-main);">ビストロ・ヴァンパイア</a>
+                                </h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                    <a href="https://amzn.to/3W73C5X" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-orange-400 text-white">
+                                        <div class="text-2xl mb-2"><i class="fab fa-amazon"></i></div>
+                                        <p class="font-bold text-sm mb-1">Amazon</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://bodoge.hoobby.net/market/items/7738" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-green-600 text-white">
+                                        <div class="text-2xl mb-2"><i class="fas fa-cube"></i></div>
+                                        <p class="font-bold text-sm mb-1">ボドゲーマ</p>
+                                        <span class="text-xs opacity-75">商品ページへ</span>
+                                    </a>
+                                    <a href="https://www.gamemarket.jp/game/185192" target="_blank" rel="noopener noreferrer" class="p-4 rounded-lg text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform block bg-gray-800 text-white">
+                                        <div class="text-2xl text-yellow-400 mb-2"><i class="fas fa-dice"></i></div>
+                                        <p class="font-bold text-sm mb-1">ゲームマーケット</p>
+                                        <span class="text-xs opacity-75">詳細を見る</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== 探偵は6人？ ===== -->
+                    <div class="card-ui card-on-main">
+                        <div class="md:flex md:gap-8 md:items-start">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
+                                <a href="works/6detect/">
+                                    <img src="works/6detect/thumbnail.png" alt="探偵は6人？" class="w-full h-auto rounded-lg shadow-lg">
+                                </a>
+                            </div>
+                            <div class="md:w-3/4">
+                                <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-main);">事件×正体隠匿</p>
+                                <h3 class="text-2xl font-bold mb-2">
+                                    <a href="works/6detect/" class="hover:opacity-75 transition-opacity" style="color: var(--card-heading-on-main);">探偵は6人？</a>
+                                </h3>
+                                <p class="text-sm mb-3" style="color: var(--card-text-on-main);">現在完売しており、再販時期は未定です。</p>
+                                <p class="text-sm" style="color: var(--card-text-on-main);">再販が決まりましたら、サークル代表（<a href="https://twitter.com/kasuga_ritsu" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-75 transition-opacity">X @kasuga_ritsu</a>）にてお知らせします。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 無料で遊べる作品 ===== -->
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">無料で遊べる作品</h2>
+                    <p class="text-on-sub-muted mt-2">Free to Play</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <a href="works/astral/" class="block card-on-sub p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                        <img src="works/astral/thumbnail.png" alt="Astral Harvest" class="w-full h-32 object-contain rounded-lg mb-4">
+                        <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-sub);">SFサバイバル×推理パズル</p>
+                        <h3 class="text-lg font-bold mb-3" style="color: var(--card-heading-on-sub);">Astral Harvest</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full group-hover:opacity-80 transition-opacity">無料でプレイ</span>
+                    </a>
+
+                    <a href="works/lumiere/" class="block card-on-sub p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                        <img src="works/lumiere/thumbnail.png" alt="雫の妖精と闇のオークション" class="w-full h-32 object-contain rounded-lg mb-4">
+                        <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-sub);">マーダーミステリー</p>
+                        <h3 class="text-lg font-bold mb-3" style="color: var(--card-heading-on-sub);">雫の妖精と闇のオークション</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full group-hover:opacity-80 transition-opacity">無料でプレイ</span>
+                    </a>
+
+                    <a href="works/todofuken/" class="block card-on-sub p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                        <img src="works/todofuken/thumbnail.png" alt="都道府県 No.1" class="w-full h-32 object-contain rounded-lg mb-4">
+                        <p class="text-sm font-bold mb-1" style="color: var(--card-heading-on-sub);">都道府県ランキング推理ゲーム</p>
+                        <h3 class="text-lg font-bold mb-3" style="color: var(--card-heading-on-sub);">都道府県 No.1</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1 rounded-full group-hover:opacity-80 transition-opacity">無料でプレイ</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="index.html" class="inline-block border border-on-sub-muted text-on-sub-muted hover:opacity-75 px-6 py-3 rounded-full transition-all duration-300">
+                    トップページへ戻る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
