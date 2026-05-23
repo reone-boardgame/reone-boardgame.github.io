@@ -260,34 +260,70 @@
         <section class="bg-main py-16 md:py-24">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-main">
-                    <h2 class="text-3xl font-bold text-on-main mb-6 text-center">ルール</h2>
-                    <div class="space-y-4 leading-relaxed">
+                    <h2 class="text-3xl font-bold text-on-main mb-6 text-center">ルール / Rules</h2>
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-4 leading-relaxed">
 
-                        <div class="font-bold">★ゲームの準備</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>ハコカードをよくシャッフルし、1人5枚ずつ配る。<br>余ったカードは箱に戻す。</li>
-                            <li>お題カードをシャッフルし、山札として中央に置く。</li>
-                            <li>各自、配られたハコカードに書かれたお題をこっそり確認する。<br>カードを裏向きにして、自分の前に好きな配置で並べて覚える。</li>
-                            <li>最初の手番の人をじゃんけんで決める。</li>
-                        </ol>
-                        <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
-                        <div class="font-bold">★ゲームの進行</div>
-                        <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
-                        <div class="font-bold">★ゲームの流れ</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>全員が両手をテーブルの上に置いたらスタート。</li>
-                            <li>手番の人は山札からお題カードを1枚めくり、みんなに見えるように中央に出して、お題を読む。</li>
-                            <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
-                            <li>全員一斉に「お題にあったアイテムが入っているはず！」と思うハコカードに手を置く。<br><span class="text-red-500 font-bold">他の人が並べたカードでも手を置くことができる。</span><br>手を置いた人がそのカードをめくり、中身がお題のアイテムと合っているかを確認する。</li>
-                            <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
-                            <li>手を置いた人がそのカードをめくり、中身がお題のアイテムと合っているかを確認する。<br>全員がカードをめくり終えたら、間違ってめくられたカードをそのままの位置で表から裏に戻す。<br>このとき、描かれたアイテムを全員が確認して覚えてもよい。</li>
-                            <li>左隣に手番を回し、手順1~5をゲームが終わるまで繰り返す。</li>
-                        </ol>
-                        <div class="font-bold">★ゲームの終了</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>山札からお題カードがなくなるか、場のハコカードがすべてなくなったらゲーム終了。<br>一番多くハコカードを獲得したプレイヤーが勝者！</li>
-                        </ol>
+                            <div class="font-bold">★ゲームの準備</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>ハコカードをよくシャッフルし、1人5枚ずつ配る。<br>余ったカードは箱に戻す。</li>
+                                <li>お題カードをシャッフルし、山札として中央に置く。</li>
+                                <li>各自、配られたハコカードに書かれたお題をこっそり確認する。<br>カードを裏向きにして、自分の前に好きな配置で並べて覚える。</li>
+                                <li>最初の手番の人をじゃんけんで決める。</li>
+                            </ol>
+                            <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ゲームの進行</div>
+                            <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ゲームの流れ</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>全員が両手をテーブルの上に置いたらスタート。</li>
+                                <li>手番の人は山札からお題カードを1枚めくり、みんなに見えるように中央に出して、お題を読む。</li>
+                                <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
+                                <li>全員一斉に「お題にあったアイテムが入っているはず！」と思うハコカードに手を置く。<br><span class="text-red-500 font-bold">他の人が並べたカードでも手を置くことができる。</span><br>手を置いた人がそのカードをめくり、中身がお題のアイテムと合っているかを確認する。</li>
+                                <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
+                                <li>手を置いた人がそのカードをめくり、中身がお題のアイテムと合っているかを確認する。<br>全員がカードをめくり終えたら、間違ってめくられたカードをそのままの位置で表から裏に戻す。<br>このとき、描かれたアイテムを全員が確認して覚えてもよい。</li>
+                                <li>左隣に手番を回し、手順1~5をゲームが終わるまで繰り返す。</li>
+                            </ol>
+                            <div class="font-bold">★ゲームの終了</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>山札からお題カードがなくなるか、場のハコカードがすべてなくなったらゲーム終了。<br>一番多くハコカードを獲得したプレイヤーが勝者！</li>
+                            </ol>
 
+                        </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-4 leading-relaxed">
+
+                            <div class="font-bold">★ Setup</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Shuffle the Box Cards thoroughly and deal 5 to each player.<br>Return any leftover cards to the box.</li>
+                                <li>Shuffle the Theme Cards and place them face-down in the center as a draw pile.</li>
+                                <li>Each player secretly checks the items shown on their dealt Box Cards.<br>Then place the cards face-down in front of yourself in any arrangement and memorize them.</li>
+                                <li>Determine the starting player by rock-paper-scissors.</li>
+                            </ol>
+                            <img src="how_to_play1.png" alt="How to play 1" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ Gameplay</div>
+                            <img src="how_to_play2.png" alt="How to play 2" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ Turn Flow</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>The round begins once all players place both hands on the table.</li>
+                                <li>The active player draws the top Theme Card from the deck, places it face-up in the center for everyone to see, and reads the theme aloud.</li>
+                                <img src="how_to_play3.png" alt="How to play 3" class="w-full h-auto rounded-lg">
+                                <li>All players simultaneously place a hand on whichever Box Card they believe contains an item matching the theme.<br><span class="text-red-500 font-bold">You may place your hand on cards arranged by other players as well.</span><br>Whoever placed their hand on a card flips it over to check whether its contents match the theme.</li>
+                                <img src="how_to_play4.png" alt="How to play 4" class="w-full h-auto rounded-lg">
+                                <li>If the flipped card matches the theme, the player keeps it as a point. If it does not match, return the card face-down to its original position.<br>While checking, all players may look at and memorize the items shown.</li>
+                                <li>Pass the turn to the left and repeat steps 1–5 until the game ends.</li>
+                            </ol>
+                            <div class="font-bold">★ End of Game</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>The game ends when the Theme Card deck runs out, or when all Box Cards on the table have been taken.<br>The player who has collected the most Box Cards is the winner!</li>
+                            </ol>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,43 +333,89 @@
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-sub">
                     <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
-                    <div class="space-y-8">
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">ハコカードの配置にはどのくらい時間をかけていい？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">特に時間制限はありませんが、全員が自分のカードを記憶・配置し終わったら次に進みます。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">ハコカードの配置にはどのくらい時間をかけていい？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">特に時間制限はありませんが、全員が自分のカードを記憶・配置し終わったら次に進みます。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">手番の人もカードの獲得に参加できる？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">はい。お題を読み上げた後は他の人と同様にハコカードの取り合いに参加できます。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">他の人のハコカードをめくってもいいの？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">はい。誰のハコカードでもめくって取ることができます。自分が配置したからといって、必ずしも自分だけが狙っているとは限りません。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">カードを重ねて置いてもいいの？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">いいえ。カードは全て重ねずに配置してください。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">他の人の手が届かない位置にカードを置いてもいい？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">なるべく他の人の手の届く範囲にカードを配置してください。</div>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">手番の人もカードの獲得に参加できる？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">はい。お題を読み上げた後は他の人と同様にハコカードの取り合いに参加できます。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">How much time can we take to arrange our Box Cards?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">There is no strict time limit. Move on to the next step once every player has memorized and arranged their cards.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can the active player also compete for cards?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Yes. After reading the theme aloud, the active player joins the scramble for Box Cards just like everyone else.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can I flip another player's Box Cards?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Yes. You may flip and try to take any player's Box Cards. Just because you arranged a card doesn't mean only you are targeting it.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can I stack cards on top of each other?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">No. All cards must be arranged without overlapping.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can I place cards where other players cannot reach them?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Please arrange your cards so that other players can reach them as much as possible.</div>
+                            </div>
+
                         </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">他の人のハコカードをめくってもいいの？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">はい。誰のハコカードでもめくって取ることができます。自分が配置したからといって、必ずしも自分だけが狙っているとは限りません。</div>
-                        </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">カードを重ねて置いてもいいの？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">いいえ。カードは全て重ねずに配置してください。</div>
-                        </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">他の人の手が届かない位置にカードを置いてもいい？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">なるべく他の人の手の届く範囲にカードを配置してください。</div>
-                        </div>
-
                     </div>
                 </div>
             </div>

@@ -99,6 +99,43 @@ body {
     color: var(--card-heading-on-sub);
 }
 
+/* ルール・Q&Aの言語切替タブ */
+.lang-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+.lang-tab {
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    color: #6b7280;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+.lang-tab:hover {
+    color: #1f2937;
+}
+.card-on-main .lang-tab.active {
+    color: var(--card-heading-on-main);
+    border-bottom-color: var(--card-heading-on-main);
+}
+.card-on-sub .lang-tab.active {
+    color: var(--card-heading-on-sub);
+    border-bottom-color: var(--card-heading-on-sub);
+}
+.lang-content {
+    display: none;
+}
+.lang-content.active {
+    display: block;
+}
+
 /* 上に戻るボタン */
 #back-to-top {
     position: fixed;

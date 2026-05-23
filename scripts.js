@@ -332,4 +332,28 @@ document.addEventListener("DOMContentLoaded", function() {
     // 関数を実行
     setupBackToTopButton();
 
+    /**
+     * ルール・Q&Aの言語切替タブを設定する
+     * ページ内のすべてのタブが連動して切り替わる
+     */
+    function setupLangTabs() {
+        const allTabs = document.querySelectorAll('.lang-tab');
+        if (allTabs.length === 0) return;
+
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-tab').forEach(t => {
+                t.classList.toggle('active', t.dataset.lang === lang);
+            });
+            document.querySelectorAll('.lang-content').forEach(c => {
+                c.classList.toggle('active', c.classList.contains('lang-' + lang));
+            });
+        }
+
+        allTabs.forEach(tab => {
+            tab.addEventListener('click', () => switchLang(tab.dataset.lang));
+        });
+    }
+
+    setupLangTabs();
+
 });

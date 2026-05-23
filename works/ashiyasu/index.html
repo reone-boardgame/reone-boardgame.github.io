@@ -265,51 +265,104 @@
         <section class="bg-main py-16 md:py-24">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-main">
-                    <h2 class="text-3xl font-bold mb-6 text-center">ルール</h2>
-                    <div class="space-y-4 leading-relaxed">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ルール / Rules</h2>
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-4 leading-relaxed">
 
-                        <div class="font-bold">★ゲームの準備</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>アクションカードをシャッフルし、各プレイヤーに裏向きで4枚ずつ配ります。余ったアクションカードは箱へ戻してください。</li>
-                            <li>各プレイヤーにカード一覧表を1枚ずつ配ります。<br>（遊ぶ際の補助用なので、無くても遊べます。）</li>
-                            <li>ハプニングカードをシャッフルし、裏向きで重ねた山札を中央に置きます。これをハプニングカードの山札とします。</li>
-                            <li>じゃんけんなどで「長子（長男または長女）」を決め、長子から右回りの順番で進めます。最後のプレイヤーが末っ子です。</li>
-                        </ol>
-                        <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
-                        <div class="font-bold">★ゲームの進行</div>
-                        <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
-                        <div class="font-bold">★1ターン目</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>長子のプレイヤーがハプニングカードの山札の一番上をめくり、表向きにして山札の一番上に重ねます。このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>に発動します。</li>
-                            <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
-                            <li>長子から順番に手札を1枚交換していきます。
-                                <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                                    <li>他プレイヤーを1人指名し、手札から渡したいカードを1枚選んで渡します。</li>
-                                    <li>カードを受け取ったプレイヤーの手札から、ランダムに1枚選び、自分の手札に加えます。</li>
-                                </ol>
-                            </li>
-                        </ol>
-                        <div class="font-bold">★2ターン目以降</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>長子のプレイヤーは、山札の一番上で表向きになっているハプニングカードを横向きにして山札の隣に置きます。このカードの効果が<span class="text-red-500 font-bold">今ターン</span>中に適用されます。<br>※効果は<span class="text-red-500 font-bold">今ターン</span>でのみ発動され、以降のターンへは引き継がれません。</li>
-                            <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
-                            <li>【ハプニングカードの更新】1ターン目と同様にハプニングカードの山札の一番上のカードを表向きにして、山札の上に重ねます。<br>※このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>で発動します。 </li>
-                            <img src="how_to_play5.png" alt="遊び方5" class="w-full h-auto rounded-lg">
-                            <li>手札の交換は1ターン目と同様です。ただし、横にしたハプニングカードの効果が適用されることに注意してください。<br>例）ハプニングカード「ポチ逃亡」が効果発動中→アクションカード「ポチのご加護」が使用できない。</li>
-                        </ol>
-                        <div class="font-bold">★ゲームの終了</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>ハプニングカードの中から「親（父または母）」カードが出ると<span class="text-red-500 font-bold">次のターン</span>でゲームは終了します。<strong>この時に適用されているハプニングカードの効果が、ゲーム終了時の温度計算に適用されます</strong>。</li>
-                            <img src="how_to_play6.png" alt="遊び方6" class="w-full h-auto rounded-lg">
-                            <li>ハプニングカード「親」が適用されたターンでは、今まで通り手札の交換を一巡します。プレイヤー全員の交換が終わればゲームは終了です。この時点での温度で勝敗を決めます。 </li>
-                        </ol>
-                        <div class="font-bold">★手札の計算と勝利条件</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>基本となる平熱36.0度に、手札のアクションカードの合計温度を足し合わせます。</li>
-                            <li>「38.1度以上で失格」に加え、「親」の前に適用されていたハプニングカードの内容に従って体温を更新します。</li>
-                            <li>病院行き判定までの範囲で最も体温が高いプレイヤーが勝者です。<br>※適用されるハプニングカードによっては最も低いプレイヤーが勝つ場合もあります。</li>
-                        </ol>
+                            <div class="font-bold">★ゲームの準備</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>アクションカードをシャッフルし、各プレイヤーに裏向きで4枚ずつ配ります。余ったアクションカードは箱へ戻してください。</li>
+                                <li>各プレイヤーにカード一覧表を1枚ずつ配ります。<br>（遊ぶ際の補助用なので、無くても遊べます。）</li>
+                                <li>ハプニングカードをシャッフルし、裏向きで重ねた山札を中央に置きます。これをハプニングカードの山札とします。</li>
+                                <li>じゃんけんなどで「長子（長男または長女）」を決め、長子から右回りの順番で進めます。最後のプレイヤーが末っ子です。</li>
+                            </ol>
+                            <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ゲームの進行</div>
+                            <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★1ターン目</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>長子のプレイヤーがハプニングカードの山札の一番上をめくり、表向きにして山札の一番上に重ねます。このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>に発動します。</li>
+                                <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
+                                <li>長子から順番に手札を1枚交換していきます。
+                                    <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                        <li>他プレイヤーを1人指名し、手札から渡したいカードを1枚選んで渡します。</li>
+                                        <li>カードを受け取ったプレイヤーの手札から、ランダムに1枚選び、自分の手札に加えます。</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <div class="font-bold">★2ターン目以降</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>長子のプレイヤーは、山札の一番上で表向きになっているハプニングカードを横向きにして山札の隣に置きます。このカードの効果が<span class="text-red-500 font-bold">今ターン</span>中に適用されます。<br>※効果は<span class="text-red-500 font-bold">今ターン</span>でのみ発動され、以降のターンへは引き継がれません。</li>
+                                <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
+                                <li>【ハプニングカードの更新】1ターン目と同様にハプニングカードの山札の一番上のカードを表向きにして、山札の上に重ねます。<br>※このハプニングカードの効果は<span class="text-red-500 font-bold">次のターン</span>で発動します。 </li>
+                                <img src="how_to_play5.png" alt="遊び方5" class="w-full h-auto rounded-lg">
+                                <li>手札の交換は1ターン目と同様です。ただし、横にしたハプニングカードの効果が適用されることに注意してください。<br>例）ハプニングカード「ポチ逃亡」が効果発動中→アクションカード「ポチのご加護」が使用できない。</li>
+                            </ol>
+                            <div class="font-bold">★ゲームの終了</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>ハプニングカードの中から「親（父または母）」カードが出ると<span class="text-red-500 font-bold">次のターン</span>でゲームは終了します。<strong>この時に適用されているハプニングカードの効果が、ゲーム終了時の温度計算に適用されます</strong>。</li>
+                                <img src="how_to_play6.png" alt="遊び方6" class="w-full h-auto rounded-lg">
+                                <li>ハプニングカード「親」が適用されたターンでは、今まで通り手札の交換を一巡します。プレイヤー全員の交換が終わればゲームは終了です。この時点での温度で勝敗を決めます。 </li>
+                            </ol>
+                            <div class="font-bold">★手札の計算と勝利条件</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>基本となる平熱36.0度に、手札のアクションカードの合計温度を足し合わせます。</li>
+                                <li>「38.1度以上で失格」に加え、「親」の前に適用されていたハプニングカードの内容に従って体温を更新します。</li>
+                                <li>病院行き判定までの範囲で最も体温が高いプレイヤーが勝者です。<br>※適用されるハプニングカードによっては最も低いプレイヤーが勝つ場合もあります。</li>
+                            </ol>
 
+                        </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-4 leading-relaxed">
+
+                            <div class="font-bold">★ Setup</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Shuffle the Action Cards and deal 4 face-down to each player. Return any remaining Action Cards to the box.</li>
+                                <li>Give each player one Card Reference Sheet.<br>(This is just a play aid; the game can be played without it.)</li>
+                                <li>Shuffle the Happening Cards and place the face-down pile in the center. This is the Happening Card draw pile.</li>
+                                <li>Choose the "eldest sibling" by rock-paper-scissors or similar. Play proceeds clockwise from the eldest. The last player is the "youngest sibling."</li>
+                            </ol>
+                            <img src="how_to_play1.png" alt="How to play 1" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ Gameplay</div>
+                            <img src="how_to_play2.png" alt="How to play 2" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ Turn 1</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>The eldest player flips the top card of the Happening Card pile face-up and places it back on top of the pile. The effect of this Happening Card will activate on the <span class="text-red-500 font-bold">next turn</span>.</li>
+                                <img src="how_to_play3.png" alt="How to play 3" class="w-full h-auto rounded-lg">
+                                <li>Starting from the eldest, each player exchanges one card from their hand.
+                                    <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                        <li>Choose one other player and pick one card from your hand to give to them.</li>
+                                        <li>Randomly draw one card from that player's hand and add it to your own hand.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <div class="font-bold">★ Turn 2 and Beyond</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>The eldest player turns the face-up Happening Card on top of the pile sideways and places it next to the pile. This card's effect applies during <span class="text-red-500 font-bold">the current turn</span>.<br>※ The effect only activates for <span class="text-red-500 font-bold">the current turn</span> and does not carry over to subsequent turns.</li>
+                                <img src="how_to_play4.png" alt="How to play 4" class="w-full h-auto rounded-lg">
+                                <li>[Updating the Happening Card] As in Turn 1, flip the top card of the Happening Card pile face-up and place it back on top.<br>※ This card's effect will activate on the <span class="text-red-500 font-bold">next turn</span>.</li>
+                                <img src="how_to_play5.png" alt="How to play 5" class="w-full h-auto rounded-lg">
+                                <li>Card exchanges work the same as Turn 1, but be sure to apply the effect of the sideways Happening Card.<br>e.g. While the Happening Card "Pochi Runaway" is active → Action Card "Pochi's Blessing" cannot be used.</li>
+                            </ol>
+                            <div class="font-bold">★ End of Game</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>When a "Parent (Father or Mother)" card is drawn from the Happening Card pile, the game ends on the <span class="text-red-500 font-bold">next turn</span>. <strong>The Happening Card effect that is active at this moment is applied to the final temperature calculation.</strong></li>
+                                <img src="how_to_play6.png" alt="How to play 6" class="w-full h-auto rounded-lg">
+                                <li>On the turn that the "Parent" Happening Card is applied, complete one full round of card exchanges as usual. Once every player has exchanged, the game ends. The temperatures at this point determine the winner.</li>
+                            </ol>
+                            <div class="font-bold">★ Hand Calculation and Victory Condition</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Add the total temperature of the Action Cards in your hand to the base normal temperature of 36.0°C.</li>
+                                <li>Apply the "disqualified at 38.1°C or higher" rule, then update your body temperature according to the Happening Card that was active just before the "Parent" card was drawn.</li>
+                                <li>The player with the highest body temperature (without being sent to the hospital) wins.<br>※ Depending on the active Happening Card, the player with the lowest temperature may win instead.</li>
+                            </ol>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,36 +372,75 @@
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-sub">
                     <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
-                    <div class="space-y-8">
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">ゲーム終了時に適用されるハプニングカードの効果はどれ？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">「親」カードが出たターンに効果が発動していたハプニングカードが温度計算時にも適用されます。<br>例）ハプニングカードの山札で「親」が出た際、その1ターン前で出て今ターンで効果発動中のハプニングカードが「暴風警報発令中」だった場合、ゲーム終了時に適用される効果はハプニングカード「暴風警報発令中」に書かれている「体温が一番低い人の勝ち」になります。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">ゲーム終了時に適用されるハプニングカードの効果はどれ？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">「親」カードが出たターンに効果が発動していたハプニングカードが温度計算時にも適用されます。<br>例）ハプニングカードの山札で「親」が出た際、その1ターン前で出て今ターンで効果発動中のハプニングカードが「暴風警報発令中」だった場合、ゲーム終了時に適用される効果はハプニングカード「暴風警報発令中」に書かれている「体温が一番低い人の勝ち」になります。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">ハプニングカードの効果はいつまで適用される？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">基本的に効果が発動したターンまでです。次のターンでは別のハプニングカードの効果が適用され、前ターンに適用されていた効果は無効になります。※ゲーム終了時は1個前のQAを確認してください。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">38度はセーフ？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">基本は38度までセーフです。38.1度から病院行きでアウトになります。これがこの家庭での判定基準です。※ハプニングカード「インフル大流行」適用時は、37.5度までセーフです。37.6度から病院行きでアウトになります。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">”温度が2倍になる”効果のアクションカード「スパーク大実験」の使い方は？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">「スパーク大実験」以外の手札3枚の合計温度を2倍にしたものが最終的な体温となります。<br>例）手札に「0.2℃、0.2℃、0.5℃、×2」があった場合、合計温度は36.0℃+(0.2+0.2+0.5)×2で37.8℃となります。</div>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">ハプニングカードの効果はいつまで適用される？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">基本的に効果が発動したターンまでです。次のターンでは別のハプニングカードの効果が適用され、前ターンに適用されていた効果は無効になります。※ゲーム終了時は1個前のQAを確認してください。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Which Happening Card effect is applied at the end of the game?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">The Happening Card that was active on the turn the "Parent" card was drawn is applied to the temperature calculation.<br>e.g. If the "Parent" card is drawn from the deck while the active effect (drawn on the previous turn) is "Storm Warning in Effect," then the rule "the player with the lowest body temperature wins" written on the "Storm Warning in Effect" card is applied at the end of the game.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">How long do Happening Card effects last?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">In general, only until the end of the turn on which they activate. On the next turn, a different Happening Card effect applies, and the previous turn's effect is no longer in force. ※ For the end of the game, see the Q&A above.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Is 38°C safe?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Normally, up to 38.0°C is safe. From 38.1°C and up, you are sent to the hospital and out. This is the threshold for this household. ※ When the Happening Card "Flu Outbreak" is in effect, only up to 37.5°C is safe; from 37.6°C and up, you are sent to the hospital and out.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">How does the Action Card "Spark Big Experiment" (which doubles temperature) work?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">The total temperature of your other 3 cards (excluding "Spark Big Experiment") is doubled to determine your final body temperature.<br>e.g. If your hand contains "0.2°C, 0.2°C, 0.5°C, ×2," the total comes to 36.0°C + (0.2 + 0.2 + 0.5) × 2 = 37.8°C.</div>
+                            </div>
+
                         </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">38度はセーフ？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">基本は38度までセーフです。38.1度から病院行きでアウトになります。これがこの家庭での判定基準です。※ハプニングカード「インフル大流行」適用時は、37.5度までセーフです。37.6度から病院行きでアウトになります。</div>
-                        </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">”温度が2倍になる”効果のアクションカード「スパーク大実験」の使い方は？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">「スパーク大実験」以外の手札3枚の合計温度を2倍にしたものが最終的な体温となります。<br>例）手札に「0.2℃、0.2℃、0.5℃、×2」があった場合、合計温度は36.0℃+(0.2+0.2+0.5)×2で37.8℃となります。</div>
-                        </div>
-
                     </div>
                 </div>
             </div>

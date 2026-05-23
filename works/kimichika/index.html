@@ -267,77 +267,156 @@
         <section class="bg-main py-16 md:py-24">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-main">
-                    <h2 class="text-3xl font-bold mb-6 text-center">ルール</h2>
-                    <div class="space-y-4 leading-relaxed">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ルール / Rules</h2>
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-4 leading-relaxed">
 
-                        <div class="font-bold">★ゲームの目的と勝利条件</div>
-                        <div>このゲームの目的は、全3学年（本ゲームではラウンドのことを学年と呼びます）を通して、最も多くの<strong>好感度チップ</strong>（以下、チップ）を集めることです。チップは主に以下の方法で獲得できます。</div>
-                        <ul class="list-disc pl-6 mt-2 space-y-1">
-                            <li>席次ボーナス：学年終了時、自分の席と”好きな人”の席が近くにあると獲得できます。</li>
-                            <li>推理ボーナス：他プレイヤーの”好きな人”を的中させると、その相手からチップを奪うことができます。ただし、予想を外すと相手にチップを奪われます。</li>
-                        </ul>
-                        <div>全3学年が終了した時点で、最も多くのチップを所持しているプレイヤーが勝者となります。</div>
+                            <div class="font-bold">★ゲームの目的と勝利条件</div>
+                            <div>このゲームの目的は、全3学年（本ゲームではラウンドのことを学年と呼びます）を通して、最も多くの<strong>好感度チップ</strong>（以下、チップ）を集めることです。チップは主に以下の方法で獲得できます。</div>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>席次ボーナス：学年終了時、自分の席と”好きな人”の席が近くにあると獲得できます。</li>
+                                <li>推理ボーナス：他プレイヤーの”好きな人”を的中させると、その相手からチップを奪うことができます。ただし、予想を外すと相手にチップを奪われます。</li>
+                            </ul>
+                            <div>全3学年が終了した時点で、最も多くのチップを所持しているプレイヤーが勝者となります。</div>
 
-                        <div class="font-bold">★ゲームの進行</div>
-                        <div>このゲームは3学年にわたって行います。</div>
+                            <div class="font-bold">★ゲームの進行</div>
+                            <div>このゲームは3学年にわたって行います。</div>
 
-                        <div>◇学年毎のゲーム準備</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>場の準備<br>座席カードのうちランダムな1枚を場に表向きで置き、その上に中央マーカーを置きます（※<strong>5人プレイの場合のみ、座席カードは置かず、中央マーカーだけを置きます</strong>）。<br>このマーカーの位置を中心とした5×5のマス目が、教室（ゲームのフィールド）となります。</li>
-                            <img src="how_to_play1.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
-                            <li>座席カードの配布<br>中央に座席カードを1枚置いた後（5人プレイの場合は置きません）、残りの座席カードからプレイ人数に応じて以下の枚数をランダムに選び、全員に公開して除外します。除外したカードは本学年では使用しません。
+                            <div>◇学年毎のゲーム準備</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>場の準備<br>座席カードのうちランダムな1枚を場に表向きで置き、その上に中央マーカーを置きます（※<strong>5人プレイの場合のみ、座席カードは置かず、中央マーカーだけを置きます</strong>）。<br>このマーカーの位置を中心とした5×5のマス目が、教室（ゲームのフィールド）となります。</li>
+                                <img src="how_to_play1.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                                <li>座席カードの配布<br>中央に座席カードを1枚置いた後（5人プレイの場合は置きません）、残りの座席カードからプレイ人数に応じて以下の枚数をランダムに選び、全員に公開して除外します。除外したカードは本学年では使用しません。
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>3人プレイ：2枚除外（1人あたり7枚配ります）</li>
+                                    <li>4人プレイ：3枚除外（1人あたり5枚配ります）</li>
+                                    <li>5人プレイ：4枚除外（1人あたり4枚配ります）</li>
+                                    <li>6人プレイ：5枚除外（1人あたり3枚配ります）</li>
+                                </ol>
+                                <strong>※除外したカードの中に同じ部活のカードが3枚含まれていた場合</strong>は、除外したカードを山札に戻してシャッフルし、選び直してください。<br>残ったカードをよくシャッフルし、各プレイヤーに配りきってください。</li>
+                                <li>自席カードの配布<br>各プレイヤーに”自席カード”を2枚ずつ配ります。</li>
+                                <li>好きな人カードの配布<br>”好きな人カード”をシャッフルし、各プレイヤーに1枚ずつ裏向きで配ります。このカードは他のプレイヤーに見せてはいけません。これが<strong>この学年であなたが狙う好きな人が所属する部活</strong>です。</li>
+                                <li>好感度チップの配布<br>1学年目だけ各プレイヤーに好感度チップを<strong>2枚ずつ</strong>配ります。2学年目と3学年目の開始時は、全プレイヤーに好感度チップを<strong>1枚ずつ</strong>配ります。</li>
+                            </ol>
+                            <img src="how_to_play2.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+
+                            <div>◇手番のながれ</div>
+                            <ol class="list-disc pl-8 space-y-4 leading-relaxed">
+                                <li>手番の順序<br><strong>1学年目</strong>：じゃんけんで最初のプレイヤーを決め、時計回りに進行します。<br><strong>2学年目以降</strong>：前学年の終了時に最も好感度チップを持っていたプレイヤーから、時計回りに進行します（同点の場合は、じゃんけんで決定します）。</li>
+                                <li>手番のアクション<br>手番では、以下の順序でアクションを行います。</li>
+                                <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                    <li>カードの配置（必須）<br>手元の自席カード（2枚のうち1枚）と手札の座席カードの中から1枚を選び、場の空いているマスに表向きで置きます。<br>自席カードをマスに置いた場合、そのマスはあなたの席として確定します。</li>
+                                    <li>推理と宣言（任意）<br>他プレイヤー1名の好きな人（部活）を推理し、宣言することができます。<br>＜手順＞
+                                        <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                            <li>宣言とベット<br>指名するプレイヤーと予想する部活を宣言し、自分のチップを所持している範囲内で好きな枚数ベットします。<br>（例：Aさんの好きな人はサッカー部だ！と宣言し、チップを2枚出す）</li>
+                                            <li>判定
+                                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                                    <li>正解の場合：<br>ベットした数と同数のチップを相手から受け取ります（相手のチップが不足している場合は、相手の手持ちすべてを受け取ります）。当てられた相手はその学年で脱落となり、場にある自席カードを裏返します。<br>※<strong>脱落したプレイヤーも手番は続けます</strong>が、学年終了時の席次ボーナスは獲得できません。</li>
+                                                    <li>不正解の場合：<br>ベットしたチップをすべて相手に渡します。</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        チップを1枚も持っていない場合を除き、このアクションは、<strong>1学年につき最低1回は必ず行う必要があります</strong>。<br>※手元に残ったもう1枚の自席カードは、この「推理の義務」を果たしたかを表す判定するためのマーカーとして使用します。推理を実行したプレイヤーは、手元の自席カードを裏返して義務完了の目印としてください。
+                                        <img src="how_to_play3.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                                    </li>
+                                </ol>
+                            </ol>
+
+                            <div>◇学年の終了と得点計算</div>
                             <ol class="list-disc pl-8 space-y-2 leading-relaxed">
-                                <li>3人プレイ：2枚除外（1人あたり7枚配ります）</li>
-                                <li>4人プレイ：3枚除外（1人あたり5枚配ります）</li>
-                                <li>5人プレイ：4枚除外（1人あたり4枚配ります）</li>
-                                <li>6人プレイ：5枚除外（1人あたり3枚配ります）</li>
+                                <li>終了条件<br>全員がカードを全て出しきったら、その学年は終了です。</li>
+                                <li>得点計算（席次ボーナス）<br>全員一斉に”好きな人カード”を公開します。<br>”自分の席”の周囲に、自分の”好きな人”がいるかを確認し、その位置関係に応じて好感度チップのやり取りを行います。</li>
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>前後左右に隣接している場合：<br><strong>学年に応じてチップを獲得</strong>します。<br>1学年目：2枚 / 2学年目：3枚 / 3学年目：5枚</li>
+                                    <li>斜めに隣接している場合：<br>学年に関わらずチップを1枚獲得します。</li>
+                                    <li>隣接できていない場合：<br>ペナルティとしてチップを1枚支払います（所持枚数が0枚の場合は支払不要）。</li>
+                                </ol>
+                                <img src="how_to_play4.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
+                                ※その学年中に推理で「好きな人」を当てられて脱落となっているプレイヤーは、<strong>席次ボーナスの獲得はなく、ペナルティの支払いも発生しません</strong>。<br>上記が終了したら、現在の学年に応じて進行します。
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>1、2学年目が終了した場合：<br>場に出された”自席カード”・”座席カード”・”中央マーカー”をすべて回収します。自席カードは持ち主の手元に戻し、裏返っている場合は表向きに戻して、次の学年の準備に進みます。</li>
+                                    <li>3学年目が終了した場合：<br>ゲームは終了し、最も多くのチップを所持しているプレイヤーが勝者となります。</li>
+                                </ol>
                             </ol>
-                            <strong>※除外したカードの中に同じ部活のカードが3枚含まれていた場合</strong>は、除外したカードを山札に戻してシャッフルし、選び直してください。<br>残ったカードをよくシャッフルし、各プレイヤーに配りきってください。</li>
-                            <li>自席カードの配布<br>各プレイヤーに”自席カード”を2枚ずつ配ります。</li>
-                            <li>好きな人カードの配布<br>”好きな人カード”をシャッフルし、各プレイヤーに1枚ずつ裏向きで配ります。このカードは他のプレイヤーに見せてはいけません。これが<strong>この学年であなたが狙う好きな人が所属する部活</strong>です。</li>
-                            <li>好感度チップの配布<br>1学年目だけ各プレイヤーに好感度チップを<strong>2枚ずつ</strong>配ります。2学年目と3学年目の開始時は、全プレイヤーに好感度チップを<strong>1枚ずつ</strong>配ります。</li>
-                        </ol>
-                        <img src="how_to_play2.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
 
-                        <div>◇手番のながれ</div>
-                        <ol class="list-disc pl-8 space-y-4 leading-relaxed">
-                            <li>手番の順序<br><strong>1学年目</strong>：じゃんけんで最初のプレイヤーを決め、時計回りに進行します。<br><strong>2学年目以降</strong>：前学年の終了時に最も好感度チップを持っていたプレイヤーから、時計回りに進行します（同点の場合は、じゃんけんで決定します）。</li>
-                            <li>手番のアクション<br>手番では、以下の順序でアクションを行います。</li>
-                            <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
-                                <li>カードの配置（必須）<br>手元の自席カード（2枚のうち1枚）と手札の座席カードの中から1枚を選び、場の空いているマスに表向きで置きます。<br>自席カードをマスに置いた場合、そのマスはあなたの席として確定します。</li>
-                                <li>推理と宣言（任意）<br>他プレイヤー1名の好きな人（部活）を推理し、宣言することができます。<br>＜手順＞
-                                    <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
-                                        <li>宣言とベット<br>指名するプレイヤーと予想する部活を宣言し、自分のチップを所持している範囲内で好きな枚数ベットします。<br>（例：Aさんの好きな人はサッカー部だ！と宣言し、チップを2枚出す）</li>
-                                        <li>判定
-                                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
-                                                <li>正解の場合：<br>ベットした数と同数のチップを相手から受け取ります（相手のチップが不足している場合は、相手の手持ちすべてを受け取ります）。当てられた相手はその学年で脱落となり、場にある自席カードを裏返します。<br>※<strong>脱落したプレイヤーも手番は続けます</strong>が、学年終了時の席次ボーナスは獲得できません。</li>
-                                                <li>不正解の場合：<br>ベットしたチップをすべて相手に渡します。</li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                    チップを1枚も持っていない場合を除き、このアクションは、<strong>1学年につき最低1回は必ず行う必要があります</strong>。<br>※手元に残ったもう1枚の自席カードは、この「推理の義務」を果たしたかを表す判定するためのマーカーとして使用します。推理を実行したプレイヤーは、手元の自席カードを裏返して義務完了の目印としてください。
-                                    <img src="how_to_play3.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
-                                </li>
+                        </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-4 leading-relaxed">
+
+                            <div class="font-bold">★ Goal & Victory Condition</div>
+                            <div>The goal of this game is to collect the most <strong>Affection Chips</strong> (hereafter "chips") over the course of all 3 school years (in this game, a round is called a "school year"). Chips are earned mainly in the following ways:</div>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Seating Bonus: At the end of a school year, you earn chips if your seat is close to your "crush's" seat.</li>
+                                <li>Deduction Bonus: If you correctly guess another player's "crush," you steal chips from them. However, if your guess is wrong, they steal chips from you.</li>
+                            </ul>
+                            <div>At the end of all 3 school years, the player with the most chips wins.</div>
+
+                            <div class="font-bold">★ Game Flow</div>
+                            <div>The game is played over 3 school years.</div>
+
+                            <div>◇ Setup for Each School Year</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Set up the play area<br>Place one random Seat Card face-up on the table and put the Center Marker on top of it (※ <strong>For 5-player games only, do not place a Seat Card — place only the Center Marker</strong>).<br>A 5×5 grid centered on this marker forms the classroom (the game's playing field).</li>
+                                <img src="how_to_play1.png" alt="How to play 1" class="w-full h-auto rounded-lg">
+                                <li>Deal the Seat Cards<br>After placing one Seat Card in the center (skip this for 5-player games), randomly select the following number of cards from the remaining Seat Cards, reveal them to everyone, and remove them. The removed cards are not used during this school year.
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>3 players: remove 2 cards (deal 7 per player)</li>
+                                    <li>4 players: remove 3 cards (deal 5 per player)</li>
+                                    <li>5 players: remove 4 cards (deal 4 per player)</li>
+                                    <li>6 players: remove 5 cards (deal 3 per player)</li>
+                                </ol>
+                                <strong>※ If the removed cards include all 3 cards of the same club</strong>, return the removed cards to the deck, reshuffle, and re-select.<br>Shuffle the remaining cards well and deal them all out to the players.</li>
+                                <li>Deal the Own-Seat Cards<br>Give each player 2 "Own-Seat" cards.</li>
+                                <li>Deal the Crush Cards<br>Shuffle the "Crush Cards" and deal one face-down to each player. Do not show this card to other players. This shows <strong>which club the crush you are aiming for belongs to this school year</strong>.</li>
+                                <li>Deal the Affection Chips<br>Only at the start of the 1st school year, give each player <strong>2 Affection Chips</strong>. At the start of the 2nd and 3rd school years, give each player <strong>1 chip</strong>.</li>
                             </ol>
-                        </ol>
+                            <img src="how_to_play2.png" alt="How to play 2" class="w-full h-auto rounded-lg">
 
-                        <div>◇学年の終了と得点計算</div>
-                        <ol class="list-disc pl-8 space-y-2 leading-relaxed">
-                            <li>終了条件<br>全員がカードを全て出しきったら、その学年は終了です。</li>
-                            <li>得点計算（席次ボーナス）<br>全員一斉に”好きな人カード”を公開します。<br>”自分の席”の周囲に、自分の”好きな人”がいるかを確認し、その位置関係に応じて好感度チップのやり取りを行います。</li>
+                            <div>◇ Turn Flow</div>
+                            <ol class="list-disc pl-8 space-y-4 leading-relaxed">
+                                <li>Turn order<br><strong>1st school year</strong>: Determine the starting player by rock-paper-scissors. Play proceeds clockwise.<br><strong>2nd school year onward</strong>: Start with the player who had the most Affection Chips at the end of the previous school year, then proceed clockwise (if tied, decide by rock-paper-scissors).</li>
+                                <li>Turn actions<br>On your turn, perform the following actions in order.</li>
+                                <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                    <li>Place a card (required)<br>Choose one card from either your Own-Seat cards (one of two) or your Seat Cards in hand, and place it face-up on any empty square on the field.<br>If you place an Own-Seat card, that square is locked in as your seat.</li>
+                                    <li>Deduction & declaration (optional)<br>You may guess one other player's crush (club) and declare it aloud.<br>＜Procedure＞
+                                        <ol class="list-decimal pl-8 space-y-2 leading-relaxed">
+                                            <li>Declaration & bet<br>Name the target player and the club you predict, then bet any number of your chips you wish (up to how many you have).<br>(e.g. "Player A's crush is in the Soccer Club!" and place 2 chips)</li>
+                                            <li>Resolution
+                                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                                    <li>If correct:<br>You receive chips from the target equal to the amount you bet (if they have fewer chips, you receive all they have). The player who was guessed is eliminated for that school year, and their Own-Seat card on the field is flipped over.<br>※ <strong>Eliminated players still take their turns</strong>, but they cannot earn the Seating Bonus at the end of the school year.</li>
+                                                    <li>If incorrect:<br>You give all the chips you bet to the target.</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        Unless you have zero chips, <strong>you must perform this action at least once per school year</strong>.<br>※ The other Own-Seat card you keep in hand is used as a marker to track whether you have fulfilled this "deduction obligation." Once you have made a guess, flip your remaining Own-Seat card to mark the obligation as complete.
+                                        <img src="how_to_play3.png" alt="How to play 3" class="w-full h-auto rounded-lg">
+                                    </li>
+                                </ol>
+                            </ol>
+
+                            <div>◇ End of School Year & Scoring</div>
                             <ol class="list-disc pl-8 space-y-2 leading-relaxed">
-                                <li>前後左右に隣接している場合：<br><strong>学年に応じてチップを獲得</strong>します。<br>1学年目：2枚 / 2学年目：3枚 / 3学年目：5枚</li>
-                                <li>斜めに隣接している場合：<br>学年に関わらずチップを1枚獲得します。</li>
-                                <li>隣接できていない場合：<br>ペナルティとしてチップを1枚支払います（所持枚数が0枚の場合は支払不要）。</li>
+                                <li>End condition<br>The school year ends when all players have played all their cards.</li>
+                                <li>Scoring (Seating Bonus)<br>All players reveal their "Crush Card" simultaneously.<br>Check whether your "crush" is near your own seat, and exchange Affection Chips based on the positional relationship.</li>
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>Adjacent (up/down/left/right):<br><strong>Gain chips according to the school year</strong>.<br>1st year: 2 chips / 2nd year: 3 chips / 3rd year: 5 chips</li>
+                                    <li>Diagonally adjacent:<br>Gain 1 chip regardless of the school year.</li>
+                                    <li>Not adjacent:<br>Pay 1 chip as a penalty (no payment is required if you have 0 chips).</li>
+                                </ol>
+                                <img src="how_to_play4.png" alt="How to play 4" class="w-full h-auto rounded-lg">
+                                ※ Players who were eliminated during that school year by having their "crush" correctly guessed <strong>do not earn the Seating Bonus, and also do not pay the penalty</strong>.<br>After scoring, proceed according to the current school year.
+                                <ol class="list-disc pl-8 space-y-2 leading-relaxed">
+                                    <li>If the 1st or 2nd school year just ended:<br>Collect all "Own-Seat cards," "Seat Cards," and the "Center Marker" from the field. Return each Own-Seat card to its owner, flipping any face-down ones back face-up, and proceed to setup for the next school year.</li>
+                                    <li>If the 3rd school year just ended:<br>The game ends and the player with the most chips is the winner.</li>
+                                </ol>
                             </ol>
-                            <img src="how_to_play4.png" alt="画像を入れる" class="w-full h-auto rounded-lg">
-                            ※その学年中に推理で「好きな人」を当てられて脱落となっているプレイヤーは、<strong>席次ボーナスの獲得はなく、ペナルティの支払いも発生しません</strong>。<br>上記が終了したら、現在の学年に応じて進行します。
-                            <ol class="list-disc pl-8 space-y-2 leading-relaxed">
-                                <li>1、2学年目が終了した場合：<br>場に出された”自席カード”・”座席カード”・”中央マーカー”をすべて回収します。自席カードは持ち主の手元に戻し、裏返っている場合は表向きに戻して、次の学年の準備に進みます。</li>
-                                <li>3学年目が終了した場合：<br>ゲームは終了し、最も多くのチップを所持しているプレイヤーが勝者となります。</li>
-                            </ol>
-                        </ol>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,75 +426,153 @@
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-sub">
                     <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
-                    <div class="space-y-8">
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">チップがマイナスになることはありますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>いいえ、0枚未満になることはありません。支払いやペナルティの際にチップが不足している場合、手持ちの分だけを支払います（所持0枚なら支払いは発生しません）。次の学年にマイナス分が持ち越されることもありません。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">推理アクションの際、あえて「自分の好きな人の部活」を宣言しても良いですか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、構いません。他プレイヤーを惑わすためのブラフとして有効です。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">もし他プレイヤーにチップを奪われるなどして、自分のチップが0枚になってしまった場合、義務である推理のアクションはどうなるでしょうか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>チップを1枚も所持していない場合、推理アクションを行うことはできず、義務も免除されます。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">場に登場する部活の枚数に偏りがあっても良いですか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、場に登場するカードが「1〜3枚」の範囲であれば、枚数に偏りがあっても構いません。ただし、特定の部活が「0枚（3枚すべてが除外）」になってしまう場合は、準備の「座席カードの配布」のルールに従って選び直してください。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">自分の席の周囲に「好きな人」のカードが複数ある場合、席次ボーナスは重複してもらえるのでしょうか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>いいえ、もらえません。最も獲得枚数が多いボーナスのみが適用されます（好きな人は1人だけだからです）。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">ゲーム終了時、チップ所持数が最多のプレイヤーが複数いる場合はどうなりますか？ </div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>該当するプレイヤー全員が勝者となります。 </div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">推理は1学年に何度でも行えますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、所持しているチップがある限り、手番が来るたびに行えます。ただし、1回の手番で行える推理アクションは1回のみです。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">脱落になった（場の自席カードが裏返った）プレイヤーも、カードを置いたり推理したりできますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、すべて通常通り行います。カードの配置はもちろん、推理アクションの義務も残ります。ただし、学年終了時の席次ボーナスは獲得できません。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">ゲーム開始時に置いた中央マーカーの下にあるカードも、ボーナスの対象になりますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、なります。他のカードと同様に部活を確認し、隣接していればボーナスを獲得できます。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">現在配置されているカードから離れた場所にカードを置いても良いですか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、5×5の範囲内であれば、他のカードと隣接していなくても自由に置くことができます。</div>
-                        </div>
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">5人プレイの時、中央マーカーが置かれているマスにカードを置くことはできますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div>はい、置くことができます。5人プレイでは中央マーカーの下にカードがない状態で始まりますが、そこも「空いているマス」として扱います。カードを置く際は、マーカーをそのカードの上に載せ直してください。</div>
-                        </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">チップがマイナスになることはありますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>いいえ、0枚未満になることはありません。支払いやペナルティの際にチップが不足している場合、手持ちの分だけを支払います（所持0枚なら支払いは発生しません）。次の学年にマイナス分が持ち越されることもありません。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">推理アクションの際、あえて「自分の好きな人の部活」を宣言しても良いですか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、構いません。他プレイヤーを惑わすためのブラフとして有効です。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">もし他プレイヤーにチップを奪われるなどして、自分のチップが0枚になってしまった場合、義務である推理のアクションはどうなるでしょうか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>チップを1枚も所持していない場合、推理アクションを行うことはできず、義務も免除されます。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">場に登場する部活の枚数に偏りがあっても良いですか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、場に登場するカードが「1〜3枚」の範囲であれば、枚数に偏りがあっても構いません。ただし、特定の部活が「0枚（3枚すべてが除外）」になってしまう場合は、準備の「座席カードの配布」のルールに従って選び直してください。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">自分の席の周囲に「好きな人」のカードが複数ある場合、席次ボーナスは重複してもらえるのでしょうか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>いいえ、もらえません。最も獲得枚数が多いボーナスのみが適用されます（好きな人は1人だけだからです）。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">ゲーム終了時、チップ所持数が最多のプレイヤーが複数いる場合はどうなりますか？ </div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>該当するプレイヤー全員が勝者となります。 </div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">推理は1学年に何度でも行えますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、所持しているチップがある限り、手番が来るたびに行えます。ただし、1回の手番で行える推理アクションは1回のみです。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">脱落になった（場の自席カードが裏返った）プレイヤーも、カードを置いたり推理したりできますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、すべて通常通り行います。カードの配置はもちろん、推理アクションの義務も残ります。ただし、学年終了時の席次ボーナスは獲得できません。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">ゲーム開始時に置いた中央マーカーの下にあるカードも、ボーナスの対象になりますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、なります。他のカードと同様に部活を確認し、隣接していればボーナスを獲得できます。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">現在配置されているカードから離れた場所にカードを置いても良いですか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、5×5の範囲内であれば、他のカードと隣接していなくても自由に置くことができます。</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">5人プレイの時、中央マーカーが置かれているマスにカードを置くことはできますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>はい、置くことができます。5人プレイでは中央マーカーの下にカードがない状態で始まりますが、そこも「空いているマス」として扱います。カードを置く際は、マーカーをそのカードの上に載せ直してください。</div>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-8">
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can chip counts ever go negative?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>No, chip counts never drop below 0. If you don't have enough chips to cover a payment or penalty, pay only what you have (if you have 0 chips, no payment is needed). The shortfall is not carried over into the next school year.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">During a deduction, can I deliberately declare "my own crush's club"?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes, that's allowed. It can be an effective bluff to mislead other players.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">If I run out of chips (for example, because another player took them all), what happens to the mandatory deduction action?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>If you have zero chips, you cannot perform the deduction action and the obligation is waived.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Is it okay if the number of club cards in play is uneven?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes — as long as each club appears 1–3 times in play, an uneven distribution is fine. However, if a specific club ends up with 0 cards in play (all 3 were removed), re-select cards following the "Deal the Seat Cards" rule in setup.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">If there are multiple "crush" cards around my seat, do I get the Seating Bonus multiple times?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>No. Only the single highest bonus applies (because you only have one crush).</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">What if multiple players are tied for the most chips at the end of the game?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>All tied players are winners.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can I make deductions multiple times per school year?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes, you can do so on every turn as long as you have chips to bet. However, you may only perform one deduction action per turn.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can a player who has been eliminated (their Own-Seat card on the field has been flipped) still place cards and make deductions?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes, they continue to act normally. They still place cards and still owe the mandatory deduction action. However, they cannot earn the Seating Bonus at the end of the school year.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Does the card placed under the Center Marker at the start of the game also count for the Seating Bonus?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes, it does. Check its club just like any other card, and earn the bonus if it is adjacent to your seat.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Can I place a card somewhere not adjacent to any of the currently placed cards?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes. Within the 5×5 grid, you may place cards freely even if they are not adjacent to any other card.</div>
+                            </div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">In a 5-player game, can I place a card on the square where the Center Marker sits?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div>Yes, you can. In 5-player games, the game starts with no card under the Center Marker, but that square still counts as an "empty square." When you place a card there, put the marker back on top of that card.</div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

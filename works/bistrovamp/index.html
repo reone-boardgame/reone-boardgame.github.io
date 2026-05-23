@@ -266,43 +266,88 @@
         <section class="bg-main py-16 md:py-24">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-main">
-                    <h2 class="text-3xl font-bold mb-6 text-center">ルール</h2>
-                    <div class="space-y-4 leading-relaxed">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ルール / Rules</h2>
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-4 leading-relaxed">
 
-                        <div class="font-bold">★ゲームの準備</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>役カードをプレイヤーの人数分用意します。この時、料理長と副料理長のカードを必ず含めてください。そして、役カードを裏向きでよく混ぜ、各プレイヤーが1枚ずつ選びます。そこに書かれている内容が、今回のゲームでのあなたの役割になります。ゲーム終了まで、自分の役カードを他のプレイヤーに見せてはいけません。</li>
-                            <li>材料カードのうち「にんにく」を各プレイヤーに1枚ずつ配ります。「にんにく」以外の材料カードを裏向きでよく混ぜ、各プレイヤーに6枚ずつ配ります。余った材料カードは使用しないため、箱にしまいます。<br>※<b>「にんにくカード」はどの食材にも代用できる”何でも”カード</b>です。ただし、<b>ヴァンパイアはにんにくが苦手なので使用できません</b>。</li>
-                            <li>メニューカードを裏向きでシャッフルして5枚選び、1~5の順番を決めて並べます。その後すべて表に向けます。ゲーム中はこの5品の料理を1から順番に作っていきます。<br>※全員シェフなのでお仕事として料理作成は成功させなければなりません。<span class="text-red-500 font-bold">最低3品、料理を成功させなければ全員敗北です。</span></li>
-                        </ol>
+                            <div class="font-bold">★ゲームの準備</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>役カードをプレイヤーの人数分用意します。この時、料理長と副料理長のカードを必ず含めてください。そして、役カードを裏向きでよく混ぜ、各プレイヤーが1枚ずつ選びます。そこに書かれている内容が、今回のゲームでのあなたの役割になります。ゲーム終了まで、自分の役カードを他のプレイヤーに見せてはいけません。</li>
+                                <li>材料カードのうち「にんにく」を各プレイヤーに1枚ずつ配ります。「にんにく」以外の材料カードを裏向きでよく混ぜ、各プレイヤーに6枚ずつ配ります。余った材料カードは使用しないため、箱にしまいます。<br>※<b>「にんにくカード」はどの食材にも代用できる”何でも”カード</b>です。ただし、<b>ヴァンパイアはにんにくが苦手なので使用できません</b>。</li>
+                                <li>メニューカードを裏向きでシャッフルして5枚選び、1~5の順番を決めて並べます。その後すべて表に向けます。ゲーム中はこの5品の料理を1から順番に作っていきます。<br>※全員シェフなのでお仕事として料理作成は成功させなければなりません。<span class="text-red-500 font-bold">最低3品、料理を成功させなければ全員敗北です。</span></li>
+                            </ol>
 
-                        <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
+                            <img src="how_to_play1.png" alt="遊び方1" class="w-full h-auto rounded-lg">
 
-                        <div class="font-bold">★ゲームの進行</div>
-                        <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
+                            <div class="font-bold">★ゲームの進行</div>
+                            <img src="how_to_play2.png" alt="遊び方2" class="w-full h-auto rounded-lg">
 
-                        <div class="font-bold">★コース料理作成の流れ</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>じゃんけんなどで材料を出す順番を決めます。最初に材料を出すプレイヤーは、1品ごとに1人ずつずらしてください。<br>例）1品目：A→B→C→Dの順<br>　　2品目：B→C→D→Aの順<br>　　3品目：C→D→A→Bの順</li>
-                            <li>準備時に決めた順番で料理を1品ずつ作成していきます。<br>メニューカードに記載されている任意の材料枠を埋めるように、各プレイヤーは材料名を宣言しながら材料カードを1枚ずつ裏向きで場に出します。埋める枠はプレイヤー人数によって異なります<br>例、4人→1~4の枠、6人→1~6の枠</li>
-                            <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
-                            ※<b>手札によってはメニューカードの記載通りに材料を出せない場合があります</b>。しかし、料理を完成させることが前提なので嘘でもカードを出さなければいけません。その時は「材料枠通りの正しい材料」を宣言しながら、「にんにく（ヴァンパイアは使用不可）」か「他の材料カード」を出してください。<br>
-                            例）A.「肉」と宣言しながら「にんにく」を出す<br>　　B.「肉」と宣言しながら「野菜」を出す
-                            <li>1品分の料理が完成したら場に出した材料カードを裏向きのまま、誰が出したか分からないようにシャッフルします。</li>
-                            <li>シャッフル後、材料カードを表向きにし結果を確認します。メニューカードに指定された材料カードがすべて揃っていれば料理成功です。ただし、にんにくカードはどの材料としても扱うことができます。 にんにくカードを除き、1枚でもメニューカードに指定された材料カードと異なる場合は料理失敗となります。</li>
-                            <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
-                            <li>確認した材料カードと該当する料理カードはゲームの進行を妨げない位置にまとめておき、後の議論時に確認できるようにします。</li>
-                            <li>ここまでの流れが終わると、次の料理に取り掛かります。同様の行動を5品すべてで繰り返します。もし途中で3品料理を失敗するとその時点でゲーム終了となります。</li>
-                        </ol>
+                            <div class="font-bold">★コース料理作成の流れ</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>じゃんけんなどで材料を出す順番を決めます。最初に材料を出すプレイヤーは、1品ごとに1人ずつずらしてください。<br>例）1品目：A→B→C→Dの順<br>　　2品目：B→C→D→Aの順<br>　　3品目：C→D→A→Bの順</li>
+                                <li>準備時に決めた順番で料理を1品ずつ作成していきます。<br>メニューカードに記載されている任意の材料枠を埋めるように、各プレイヤーは材料名を宣言しながら材料カードを1枚ずつ裏向きで場に出します。埋める枠はプレイヤー人数によって異なります<br>例、4人→1~4の枠、6人→1~6の枠</li>
+                                <img src="how_to_play3.png" alt="遊び方3" class="w-full h-auto rounded-lg">
+                                ※<b>手札によってはメニューカードの記載通りに材料を出せない場合があります</b>。しかし、料理を完成させることが前提なので嘘でもカードを出さなければいけません。その時は「材料枠通りの正しい材料」を宣言しながら、「にんにく（ヴァンパイアは使用不可）」か「他の材料カード」を出してください。<br>
+                                例）A.「肉」と宣言しながら「にんにく」を出す<br>　　B.「肉」と宣言しながら「野菜」を出す
+                                <li>1品分の料理が完成したら場に出した材料カードを裏向きのまま、誰が出したか分からないようにシャッフルします。</li>
+                                <li>シャッフル後、材料カードを表向きにし結果を確認します。メニューカードに指定された材料カードがすべて揃っていれば料理成功です。ただし、にんにくカードはどの材料としても扱うことができます。 にんにくカードを除き、1枚でもメニューカードに指定された材料カードと異なる場合は料理失敗となります。</li>
+                                <img src="how_to_play4.png" alt="遊び方4" class="w-full h-auto rounded-lg">
+                                <li>確認した材料カードと該当する料理カードはゲームの進行を妨げない位置にまとめておき、後の議論時に確認できるようにします。</li>
+                                <li>ここまでの流れが終わると、次の料理に取り掛かります。同様の行動を5品すべてで繰り返します。もし途中で3品料理を失敗するとその時点でゲーム終了となります。</li>
+                            </ol>
 
-                        <div class="font-bold">★ゲームの終了と勝利条件</div>
-                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
-                            <li>料理を5品完成させた後、これまでの材料の出し方や料理の成功・失敗を振り返り、誰がヴァンパイアか議論します。（制限時間：3分）</li>
-                            <li>議論後に多数決を実施し、投票数の多い者がヴァンパイアとして吊るされます。</li>
-                            <li>吊るされたプレイヤーは役カードを開示します。</li>
-                            <li>ヴァンパイアとして吊ったプレイヤーがヴァンパイア役だった場合は一般シェフたちの勝ちです。吊ったプレイヤーがヴァンパイア役ではなく、スーシェフまたは一般シェフだった場合はヴァンパイアとスーシェフの勝ちです。</li>
-                        </ol>
+                            <div class="font-bold">★ゲームの終了と勝利条件</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>料理を5品完成させた後、これまでの材料の出し方や料理の成功・失敗を振り返り、誰がヴァンパイアか議論します。（制限時間：3分）</li>
+                                <li>議論後に多数決を実施し、投票数の多い者がヴァンパイアとして吊るされます。</li>
+                                <li>吊るされたプレイヤーは役カードを開示します。</li>
+                                <li>ヴァンパイアとして吊ったプレイヤーがヴァンパイア役だった場合は一般シェフたちの勝ちです。吊ったプレイヤーがヴァンパイア役ではなく、スーシェフまたは一般シェフだった場合はヴァンパイアとスーシェフの勝ちです。</li>
+                            </ol>
 
+                        </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-4 leading-relaxed">
+
+                            <div class="font-bold">★ Setup</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Prepare Role Cards equal to the number of players, making sure to always include the Vampire and Sous-Chef cards. Shuffle the Role Cards face-down and have each player draw one. The role written on the card is your role for this game. Do not show your Role Card to other players until the game ends.</li>
+                                <li>Deal one "Garlic" Ingredient Card to each player. Then shuffle the remaining (non-Garlic) Ingredient Cards face-down and deal 6 to each player. Any leftover Ingredient Cards are not used and are returned to the box.<br>※ <b>The "Garlic" card is a wildcard that can stand in for any ingredient.</b> However, <b>the Vampire cannot use Garlic because they hate it.</b></li>
+                                <li>Shuffle the Menu Cards face-down, draw 5, and arrange them in order from 1 to 5. Then flip them all face-up. During the game, players will cook these 5 dishes in order starting from 1.<br>※ Everyone is a chef and cooking is your job — you must succeed at making the dishes. <span class="text-red-500 font-bold">If you fail to complete at least 3 dishes, everyone loses.</span></li>
+                            </ol>
+
+                            <img src="how_to_play1.png" alt="How to play 1" class="w-full h-auto rounded-lg">
+
+                            <div class="font-bold">★ Gameplay</div>
+                            <img src="how_to_play2.png" alt="How to play 2" class="w-full h-auto rounded-lg">
+
+                            <div class="font-bold">★ Cooking a Course Dish</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>Decide the order for placing ingredients by rock-paper-scissors or similar. Shift the starting player by one for each new dish.<br>e.g. Dish 1: A → B → C → D<br>　　Dish 2: B → C → D → A<br>　　Dish 3: C → D → A → B</li>
+                                <li>Cook the dishes one at a time in the order decided during setup.<br>To fill the ingredient slots listed on the Menu Card, each player declares the name of an ingredient and places one Ingredient Card face-down on the table. The number of slots to fill depends on the player count.<br>e.g. 4 players → slots 1–4; 6 players → slots 1–6</li>
+                                <img src="how_to_play3.png" alt="How to play 3" class="w-full h-auto rounded-lg">
+                                ※ <b>Depending on your hand, you may not be able to play an ingredient that matches the Menu Card.</b> Since the dish must be completed, you may need to lie. In that case, declare "the correct ingredient for that slot" while playing either a "Garlic" card (Vampire cannot use this) or a different Ingredient Card.<br>
+                                e.g. A. Declare "Meat" while playing "Garlic"<br>　　B. Declare "Meat" while playing "Vegetables"
+                                <li>Once one dish is complete, shuffle the played Ingredient Cards while still face-down so that no one knows who played which card.</li>
+                                <li>After shuffling, flip the cards face-up to check the result. If all of the ingredients required by the Menu Card are present, the dish is a success. Garlic cards can count as any ingredient. If even one card other than Garlic does not match what the Menu Card requires, the dish fails.</li>
+                                <img src="how_to_play4.png" alt="How to play 4" class="w-full h-auto rounded-lg">
+                                <li>Set the checked Ingredient Cards aside together with their Menu Card in a spot that doesn't interfere with play, so they can be referenced during discussion later.</li>
+                                <li>Once that is finished, move on to the next dish. Repeat the same flow for all 5 dishes. If 3 dishes fail along the way, the game ends at that point.</li>
+                            </ol>
+
+                            <div class="font-bold">★ End of Game and Victory Condition</div>
+                            <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                                <li>After completing all 5 dishes, review how ingredients were played and which dishes succeeded or failed, and discuss who you think the Vampire is. (Time limit: 3 minutes)</li>
+                                <li>After the discussion, hold a majority vote. The player with the most votes is hanged as the Vampire.</li>
+                                <li>The hanged player reveals their Role Card.</li>
+                                <li>If the hanged player really was the Vampire, the chefs win. If the hanged player was the Sous-Chef or a regular Chef instead, the Vampire and the Sous-Chef win.</li>
+                            </ol>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,36 +357,75 @@
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="card-ui card-on-sub">
                     <h2 class="text-3xl font-bold mb-8 text-center">Q&A</h2>
-                    <div class="space-y-8">
+                    <div class="lang-tabs">
+                        <button class="lang-tab active" data-lang="ja">日本語</button>
+                        <button class="lang-tab" data-lang="en">English</button>
+                    </div>
+                    <div class="lang-content lang-ja active">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">最後の投票時、ヴァンパイアと疑われた最多票のプレイヤーが複数人いた場合は？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">再投票かジャンケンなどの方法でで1人に絞ってください。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">最後の投票時、ヴァンパイアと疑われた最多票のプレイヤーが複数人いた場合は？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">再投票かジャンケンなどの方法でで1人に絞ってください。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">手番の人もカードの獲得に参加できる？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">相談や会話は自由です。ただし、1分程度に収め、長くならないようにしてください。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">コース料理を3品以上失敗した場合は？（ゲーム途中で3品失敗したら？）</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">その時点でゲームは終了し、プレイヤーは全員敗北です。最初からゲームをやり直してください。</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">材料カードに書いてある豆知識をゲーム中に使うことはありますか？</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">ありません。ちょっとした雑学としてお楽しみください。</div>
+                            </div>
+
                         </div>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <div class="space-y-8">
 
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">手番の人もカードの獲得に参加できる？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">相談や会話は自由です。ただし、1分程度に収め、長くならないようにしてください。</div>
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">During the final vote, what if multiple players are tied for the most votes?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Narrow it down to one player using a re-vote, rock-paper-scissors, or a similar method.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Are players allowed to talk to each other during the game?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">Yes, free discussion and conversation are allowed. However, please keep it to about one minute and avoid dragging it out.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">What happens if 3 or more dishes fail (i.e., if 3 dishes fail mid-game)?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">The game ends at that point and all players lose. Restart the game from the beginning.</div>
+                            </div>
+
+                            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
+                                <div class="font-bold text-lg">Q.</div>
+                                <div class="font-bold">Are the trivia facts printed on the Ingredient Cards used during the game?</div>
+                                <div class="font-bold text-lg row-start-2">A.</div>
+                                <div class="row-start-2">No. Please enjoy them as fun trivia.</div>
+                            </div>
+
                         </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">コース料理を3品以上失敗した場合は？（ゲーム途中で3品失敗したら？）</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">その時点でゲームは終了し、プレイヤーは全員敗北です。最初からゲームをやり直してください。</div>
-                        </div>
-
-                        <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-4">
-                            <div class="font-bold text-lg">Q.</div>
-                            <div class="font-bold">材料カードに書いてある豆知識をゲーム中に使うことはありますか？</div>
-                            <div class="font-bold text-lg row-start-2">A.</div>
-                            <div class="row-start-2">ありません。ちょっとした雑学としてお楽しみください。</div>
-                        </div>
-
                     </div>
                 </div>
             </div>
