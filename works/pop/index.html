@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop &amp; Slide | Re-one</title>
+    <link rel="icon" href="../../favicon.ico">
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="bg-main-darker"  data-base-path="../../">
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- ===== タイトル & サムネイル ===== -->
+        <section class="bg-sub">
+            <div class="container mx-auto px-6 py-16 md:py-24">
+                <div class="lg:flex lg:items-center lg:gap-16">
+                    <!-- テキストエリア -->
+                    <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+                        <p class="text-on-sub-muted font-bold mb-2">コーンを滑らせて遊ぶカーリングゲーム</p>
+                        <h1 class="text-4xl md:text-5xl font-bold text-on-sub mb-4 leading-tight">Pop &amp; Slide</h1>
+                        <p class="text-on-sub-muted text-lg mt-4 max-w-xl mx-auto lg:mx-0">ぽんっと弾ける、新しいカーリング</p>
+                    </div>
+                    <!-- 商品サムネイル -->
+                    <div class="lg:w-1/2">
+                        <!-- TODO: 実際のプレイ画面のスクリーンショットに差し替えてください -->
+                        <img src="thumbnail.png" alt="ゲームのサムネイル画像" class="w-full h-auto rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== こんなゲーム ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-main">こんなゲーム</h2>
+                    <p class="text-on-main-muted mt-2">Recommended for</p>
+                    <div class="w-24 h-1 bg-sub mx-auto mt-4"></div>
+                </div>
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">ゲーム概要</h2>
+                    <p class="leading-relaxed text-xl">
+                        「Pop &amp; Slide」は、氷の上を滑る石の代わりに、鉄板の上を滑る"コーン"を使うカーリングゲームです。
+                    </p>
+                    <p class="leading-relaxed text-xl">
+                        コーンを引っ張って離すと、狙った方向へ滑り出します。鉄板（熱いゾーン）を通ると熱がたまり、やがて「ポンッ」と弾けてポップコーンが出来上がります。ポップした後は摩擦が大きくなり、熱いほうから冷たいほうへ曲がりながら失速していきます。
+                    </p>
+                    <p class="leading-relaxed text-xl">
+                        まっすぐ滑らせて相手を弾き出すか、鉄板でタイミングよくポップさせてカーブさせるか。狙いを定めて、ハウスの中心にコーンを近づけましょう。
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+
+                        <!-- 左上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-gift"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">完全無料</h3>
+                                <p>Webブラウザさえあれば、今すぐ無料で楽しめる</p>
+                            </div>
+                        </div>
+                        <!-- 右上 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-fire"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">タネとポップの駆け引き</h3>
+                                <p>まっすぐ滑るタネと、熱で曲がるポップコーン。使い分けが勝敗を分ける</p>
+                            </div>
+                        </div>
+                        <!-- 左下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-robot"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">AI対戦</h3>
+                                <p>「ふんわり」「こんがり」「カリカリ」の3段階から相手を選んで一人でも遊べる</p>
+                            </div>
+                        </div>
+                        <!-- 右下 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="icon-color text-2xl pt-1"><i class="fas fa-paint-brush"></i></div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">かわいいマスコット</h3>
+                                <p>ポップコーンのマスコットキャラクターが登場。見ているだけで癒される世界観</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-on-sub">ゲームを始める</h2>
+                    <p class="text-on-sub-muted mt-2">Play Free</p>
+                    <div class="w-24 h-1 bg-main mx-auto mt-4"></div>
+                </div>
+
+                <div class="flex flex-col justify-center gap-6">
+                    <!-- TODO: 実際の公開URLに差し替えてください -->
+                    <a href="https://soraking44.github.io/homepage/pop/" class="w-full card-on-sub p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center group">
+                        <div class="text-5xl text-blue-600 mb-4"><i class="fas fa-gamepad"></i></div>
+                        <h3 class="text-3xl font-bold mb-4">今すぐ遊ぶ</h3>
+                        <p class="mb-6 text-lg opacity-80">ブラウザでそのままプレイ開始（無料）</p>
+                        <span class="inline-block bg-blue-600 text-white font-bold py-4 px-12 rounded-full text-xl group-hover:opacity-80 transition-opacity">
+                            GAME START
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 基本情報 ===== -->
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-8 text-center">基本情報</h2>
+
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ人数</dt>
+                            <dd class="w-3/4"><!-- TODO: 要確認 -->1〜2人</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">プレイ時間</dt>
+                            <dd class="w-3/4"><!-- TODO: 要確認 -->5〜10分</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">対象年齢</dt>
+                            <dd class="w-3/4"><!-- TODO: 要確認 -->6歳以上</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ジャンル</dt>
+                            <dd class="w-3/4">デジタルカーリングゲーム</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-main py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-main">
+                    <h2 class="text-3xl font-bold mb-6 text-center">遊び方</h2>
+                    <div class="space-y-4 leading-relaxed">
+
+                        <ol class="list-decimal pl-8 space-y-4 leading-relaxed">
+                            <li>タネを引っ張る<br>手前のタネを指（マウス）で後ろへ引っ張って離します。飛ぶ向きは引っ張った方向の反対で、長く引くほど速く遠くまで滑ります。</li>
+                            <li>狙いを定める<br>タネは低摩擦でまっすぐ進み、よく弾みます。相手のコーンを弾き出す「テイクアウト」に向いています。</li>
+                            <li>鉄板でポップさせる<br>鉄板（熱いゾーン）を通ると熱がたまり、熱い場所ほど早くポップします。鉄板を通らず止まった場合も、止まった場所で必ずポップします。</li>
+                            <li>カーブを操る<br>ポップした後は摩擦が大きくなり、熱いほう（赤・白）から冷たいほう（青）へ曲がりながら減速します。まっすぐ進めたいなら同じ色の帯に沿わせ、大きく曲げたいなら赤・白の縁を通しましょう。ポップしたタネは元には戻りません。</li>
+                            <li>得点を競う<br>1エンドは各プレイヤー4投を交互に行い、1試合は2エンド。エンド終了時にハウス中心に一番近いコーンを持つプレイヤーが得点し、次のエンドは得点したプレイヤーが先攻になります。</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sub py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="card-ui card-on-sub">
+                    <h2 class="text-3xl font-bold mb-8 text-center">クレジット</h2>
+                    <dl class="space-y-6">
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">ゲームデザイン</dt>
+                            <dd class="w-3/4">soraKING</dd>
+                        </div>
+                        <div class="flex">
+                            <dt class="w-1/4 font-bold">リリース日</dt>
+                            <dd class="w-3/4">2026/08/09 (ver1.0.1)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="../../index.html" class="inline-block border border-on-sub-muted text-on-sub-muted hover:opacity-75 px-6 py-3 rounded-full transition-all duration-300">
+                    トップページへ戻る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../../scripts.js"></script>
+
+</body>
+</html>
